@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import "../styles/global.css"
 import "../styles/footer.css"
 

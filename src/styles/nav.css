@@ -1,15 +1,14 @@
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding: 2rem;
 }
 
-.links {
+.subpages {
     width: fit-content;
 }
 
-.links a {
-    padding-right: 1rem;
+.subpages a {
+    padding-left: 1rem;
 }
