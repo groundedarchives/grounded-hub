@@ -1,12 +1,3 @@
 /* 
 home.css -- styles to be applied on the home page 
 */
-
-section {
-    background-color: #FDF9F2;
-    border-top: 1px solid black;
-
-    height: 100vh;
-
-    padding: 4rem;
-}

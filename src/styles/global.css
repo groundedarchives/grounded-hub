@@ -23,6 +23,15 @@ MARK - utility styles
     font-size: 3rem;
 }
 
+section {
+  background-color: #FDF9F2;
+  border-top: 1px solid black;
+
+  height: 100vh;
+
+  padding: 4rem;
+}
+
 
 /* 
 MARK - CSS resets

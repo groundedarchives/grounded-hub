@@ -6,10 +6,11 @@ import "../styles/nav.css"
 export default function Nav() {
   return (
     <nav>
+      
       <div className="links">
-        <Link>Gallery</Link>
-        <Link>Visualization</Link>
-        <Link>About</Link>
+        <Link to="/gallery">Gallery</Link>
+        <Link to="/visualization">Visualization</Link>
+        <Link to="/about">About</Link>
       </div>
     </nav>
   )
