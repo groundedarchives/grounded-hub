@@ -6,7 +6,7 @@ import "../styles/nav.css"
 export default function Nav() {
   return (
     <nav>
-      <div>
+      <div className="links">
         <Link>Gallery</Link>
         <Link>Visualization</Link>
         <Link>About</Link>

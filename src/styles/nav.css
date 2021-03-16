@@ -1,4 +1,15 @@
 nav {
+    display: flex;
+    justify-content: flex-end;
+
     padding-bottom: 2rem;
     padding-top: 2rem;
+}
+
+.links {
+    width: fit-content;
+}
+
+.links a {
+    padding-right: 1rem;
 }
