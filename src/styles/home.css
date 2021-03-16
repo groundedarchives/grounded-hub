@@ -1,0 +1,9 @@
+/* 
+home.css -- styles to be applied on the home page 
+*/
+
+section {
+    background-color: #FDF9F2;
+    height: 100vh;
+    border-bottom: 1px solid #C4C4C4;
+}
