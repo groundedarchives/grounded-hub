@@ -1,13 +1,13 @@
 import React from "react"
+import Nav from "../components/Nav"
+import Footer from "../components/Footer"
 import "../styles/global.css"
-import "../styles/home.css"
+import "../styles/index.css"
 
 export default function Home() {
   return (
     <>
-      <nav>
-        
-      </nav>
+      <Nav />
       <section className="landing">
         <h1 className="title-L">Home</h1>
       </section>
@@ -17,7 +17,7 @@ export default function Home() {
       <section className="explore">
         <h1 className="title-L">Explore</h1>
       </section>
-      <footer></footer>
+      <Footer />
     </>
   )
 }
