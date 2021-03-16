@@ -1,19 +1,48 @@
 /* 
-global.css -- styles to be applies on every page 
+global.css -- styles to be applies on every page, including resets to CSS presets
 */
 
 /* 
-MARK - global styles
+MARK - root styles
 */
-
-
 :root {
     font-size: 16px;
 }
 
-.title {
+/* 
+MARK - utility styles
+*/
+
+.title-L {
     /* 6 x root font size = 6 x 16 = 96px */
     font-size: 6rem;
+}
+
+.title-M {
+    /* 6 x root font size = 6 x 16 = 96px */
+    font-size: 3rem;
+}
+
+
+/* 
+MARK - navbar styles
+*/
+
+
+
+
+/* 
+MARK - footer styles
+*/
+
+
+footer {
+    background-color: #FFF2D1;
+
+    height: 200px;
+
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 
@@ -86,6 +115,8 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #222;
+
+  margin: 0px;
 }
 
 
