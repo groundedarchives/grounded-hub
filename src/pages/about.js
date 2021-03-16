@@ -9,7 +9,7 @@ export default function About() {
     <>
       <Nav />
       <section>
-        <h1 className="title-L">Gallery</h1>
+        <h1 className="title-L">About</h1>
       </section>
       <Footer />
     </>
