@@ -49,7 +49,7 @@ A quick look at the top-level files and directories you'll see in this project.
 
 3.  **`/src/components`**: This subdirectory will contain individual react components that can be reused across the site. If there is some core functionality (HTML, JS, and CSS) that will be reused across the site, or needs to contain its own state, it should be made into its own function.
 4.  **`/src/pages`**: This subdirectory contains all the code for an indivdual page. Any file in this directory will be automatically routed with the scheme: `base-url/filename' (e.x: 'about.js` will be on the link `base url/about`. You can use the Gatsby `<Link></Link>` component to link between pages. Read about it [here](https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/).
-5.  **`/src/styles`**: This directory will contain all of the styles for each page or component.
+5.  **`/src/styles`**: This directory will contain all of the styles for each page or component. CSS shared on every page of the site (like styling for large titles, medium titles, body text, etc) should go on `global.css`. Styling for individual pages or components should be in their own file, in lowercase. These css files can be imported into each components/page at the top.
 
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
