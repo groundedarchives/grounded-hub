@@ -1,3 +1,20 @@
 /* 
 home.css -- styles to be applied on the home page 
 */
+.about {
+  padding: 10%;
+}
+@media (min-width: 768px) {
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: row;
+  }
+  .about-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+  }
+}
