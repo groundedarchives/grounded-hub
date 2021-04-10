@@ -12,7 +12,11 @@ export default function Home() {
         <h1 className="title-L">Home</h1>
       </section>
       <section className="about">
-        <h1 className="title-L">About</h1>
+
+      <div className="container">
+        
+      </div>
+
       </section>
       <section className="explore">
         <h1 className="title-L">Explore</h1>
