@@ -3,7 +3,7 @@ import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 import "../styles/global.css"
 import "../styles/index.css"
-import WashUImage from "../../static/images/WashU.png";
+import WashUImage from "../../static/images/WashU.png"
 
 export default function Home() {
   return (
@@ -15,16 +15,20 @@ export default function Home() {
       <section className="about">
         <div className="about-container">
           <div className="about-left">
-            <img src={WashUImage} width="300"></img>
+            <img src={WashUImage} width="400"></img>
           </div>
-          <div className ="about-right">
-            <div className="about-text">
+          <div className="about-right">
+            <div className="about-header">
+              <h1>Explaining Briefly What Stroies Are</h1>
+            </div>
+            <div className="about-paragraph">
               <p>
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                “Grounded: The Pandemic Archive” is our effort to assemble a
+                living archive of the objects that tell stories of home and
+                hardship amid the ongoing battles for health, community, and
+                justice. We invite you to explore the archive and discover how
+                different objects hold a piece of their story and voice to
+                history.
               </p>
             </div>
             <div className="about-button">
