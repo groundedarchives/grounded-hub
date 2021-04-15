@@ -1,3 +1,13 @@
 /* 
 home.css -- styles to be applied on the home page 
 */
+
+.explore-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore-body {
+    display: flex;
+    justify-content: left;
+}
