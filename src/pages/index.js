@@ -38,7 +38,29 @@ export default function Home() {
         </div>
       </section>
       <section className="explore">
-        <h1 className="title-L">Explore</h1>
+
+        <div className="explore-header">
+          <h1 className="title-L">Explore</h1>
+          <button className="to_gallery">View Entire Gallery</button>
+        </div>
+
+        <div className="explore-body">
+          <div className="pic_names">
+            <p>Home office</p>
+            <p>Scrabble Set</p>
+            <p>Potted Plant</p>
+            <p>Harry Potter 7</p>
+            <p>Candle Set</p>
+            <p>River Pebble</p>
+            <p>Punching Bag</p>
+            <p>Subway Pass</p>
+            <p>Journal Collage</p>
+          </div>
+
+          <div id="images">
+          </div>
+
+        </div>
       </section>
       <Footer />
     </>
