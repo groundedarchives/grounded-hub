@@ -2,18 +2,19 @@
 home.css -- styles to be applied on the home page 
 */
 
-.explore-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.explore-body {
-    display: flex;
-    justify-content: left;
-}
 .about {
   padding: 10%;
 }
+
+.image_names {
+  display: none;
+}
+
+.scroll-container {
+  display: flex;
+  overflow: scroll
+}
+
 @media (min-width: 768px) {
   .about-container {
     display: flex;
@@ -30,7 +31,24 @@ home.css -- styles to be applied on the home page
   .about-header {
     padding-bottom: 0.5rem;
   }
-}
-h1 {
-  font-size: 2.5rem;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .explore-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .explore-body {
+    display: flex;
+    justify-content: left;
+  }
+
+  .image_names {
+    display: block;
+    width: 40rem;
+  }
 }
