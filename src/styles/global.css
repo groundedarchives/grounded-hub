@@ -105,3 +105,12 @@ body {
 
   margin: 0px;
 }
+
+@media (max-width: 769px){
+    .grid {
+      justify-content: center;
+      align-items: center;
+    }
+
+  
+}
