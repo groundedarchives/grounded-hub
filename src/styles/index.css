@@ -2,7 +2,14 @@
 home.css -- styles to be applied on the home page 
 */
 
-/* about section */
+/* landing section */
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
 
 .landing-h {
   font-size: 3.5rem;
@@ -24,6 +31,22 @@ home.css -- styles to be applied on the home page
 }
 
 @media (min-width: 768px) {
+  .landing-text {
+    max-width: 50%;
+  }
+}
+
+/* about section */
+
+.about-header {
+  padding-bottom: 0.5rem;
+}
+
+.about-left {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
   .about-container {
     display: flex;
     justify-content: center;
@@ -31,23 +54,15 @@ home.css -- styles to be applied on the home page
     height: 100%;
     flex-direction: row;
   }
+
+  .about-left {
+    margin-bottom: 0rem;
+  }
+
   .about-right {
     display: flex;
     flex-direction: column;
     padding-left: 1rem;
-  }
-  .about-header {
-    padding-bottom: 0.5rem;
-  }
-  .landing-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    flex-direction: column;
-  }
-  .landing-text {
-    width: 50%;
   }
 
   .responsive {

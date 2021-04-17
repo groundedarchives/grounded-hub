@@ -45,7 +45,7 @@ export default function Home() {
           </div>
           <div className="about-right">
             <div className="about-header">
-              <h1>Explaining Briefly What Stories Are</h1>
+              <h2 className="title-M">The Pandemic Archive</h2>
             </div>
             <div className="about-paragraph">
               <p>
@@ -57,15 +57,15 @@ export default function Home() {
                 history.
               </p>
             </div>
-            <div className="about-button">
+            {/* <div className="about-button">
               <button>Learn More</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
       <section className="explore">
         <div className="explore-header">
-          <h1 className="title-L">Explore</h1>
+          <h2 className="title-M">Explore</h2>
           <Link to="/gallery">View Entire Gallery</Link>
         </div>
 
