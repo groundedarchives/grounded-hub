@@ -14,6 +14,11 @@ home.css -- styles to be applied on the home page
 .about {
   padding: 10%;
 }
+.responsive {
+  max-width: 100%;
+  min-width: 40%;
+  height: auto;
+}
 @media (min-width: 768px) {
   .about-container {
     display: flex;
@@ -29,6 +34,26 @@ home.css -- styles to be applied on the home page
   }
   .about-header {
     padding-bottom: 0.5rem;
+  }
+  .landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+  }
+  .landing-text {
+    width: 50%;
+  }
+  .landing-p {
+    text-align: center;
+  }
+  .landing-h {
+    font-size: 3.5rem;
+  }
+  .responsive {
+    min-width: 100%;
+    height: auto;
   }
 }
 h1 {

@@ -10,12 +10,26 @@ export default function Home() {
     <>
       <Nav />
       <section className="landing">
-        <h1 className="title-L">Home</h1>
+        <div className="landing-container">
+          <div className="landing-header">
+            <h1 className="landing-h">Grounded.</h1>
+          </div>
+          <div className="landing-text">
+            <p className="landing-p">The stories of global events are often found in the objects left
+            behind: artifacts in museums, keepsakes passed through families,
+            etc. Recent events have forced many of us to find new meaning in the
+            spaces we inhabit and the objects that surround us.
+            </p>
+          </div>
+          <div className="landing-button">
+            <button>Learn More</button>
+          </div>
+        </div>
       </section>
       <section className="about">
         <div className="about-container">
           <div className="about-left">
-            <img src={WashUImage} width="400"></img>
+            <img src={WashUImage} class="responsive"></img>
           </div>
           <div className="about-right">
             <div className="about-header">
@@ -38,7 +52,6 @@ export default function Home() {
         </div>
       </section>
       <section className="explore">
-
         <div className="explore-header">
           <h1 className="title-L">Explore</h1>
           <button className="to_gallery">View Entire Gallery</button>
@@ -57,9 +70,7 @@ export default function Home() {
             <p>Journal Collage</p>
           </div>
 
-          <div id="images">
-          </div>
-
+          <div id="images"></div>
         </div>
       </section>
       <Footer />
