@@ -22,7 +22,7 @@ export default function Home() {
       <section className="landing">
         <div className="landing-container">
           <div className="landing-header">
-            <h1 className="landing-h">Grounded</h1>
+            <h1 className=" title-L landing-h">Grounded</h1>
           </div>
           <div className="landing-text">
             <p className="landing-p">
@@ -65,12 +65,25 @@ export default function Home() {
       </section>
       <section className="explore">
         <div className="explore-header">
-          <h2 className="title-M">Explore</h2>
-          <Link to="/gallery">View Entire Gallery</Link>
+          <div>
+            <h2 className="title-L">Gallery</h2>
+            <p className="gallery-text">
+              The Gallery offers an artistic representation of several
+              submissions to explore the possibilities of a digital exhibit. See
+              The Archive to view all stories in their original form.
+            </p>
+          </div>
+          <Link className="button" to="/gallery">
+            View the Archive
+          </Link>
         </div>
-
         <div className="explore-body">
-          <div className="image_names">
+          <p className="gallery-text">
+            The Gallery offers an artistic representation of several submissions
+            to explore the possibilities of a digital exhibit. See The Archive
+            to view all stories in their original form.
+          </p>
+          <div className="image-names">
             <p>Home office</p>
             <p>Scrabble Set</p>
             <p>Potted Plant</p>

@@ -1,9 +1,9 @@
-
 footer {
-    background-color: #FFF2D1;
+  background-color: #c2d8d8;
 
-    height: 200px;
+  height: 200px;
 
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
