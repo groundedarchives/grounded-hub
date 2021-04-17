@@ -10,7 +10,9 @@ class Collapsible extends React.Component {
         this.state = {
             open: false,
             width: 0,
-            height:0
+            height:0,
+            pictureWidth: this.props.width,
+            pictureHeight: this.props.height
 
         }
         this.togglePanel = this.togglePanel.bind(this);
@@ -27,7 +29,22 @@ class Collapsible extends React.Component {
     }
 
     updateWindowDimensions() {
-        this.setState({ width: window.innerWidth, height: window.innerHeight });
+        this.setState({ 
+            width: window.innerWidth, 
+            height: window.innerHeight,
+            }, () => {
+                if (this.state.width < 500){
+                    let tempWidth = this.state.pictureWidth/3;
+                    let tempHeight = this.state.pictureHeight/3;
+                    this.setState({
+                        pictureHeight: tempHeight,
+                        pictureWidth: tempWidth
+                    })
+
+                }
+        
+
+            })
     } 
     togglePanel(e) {
         this.setState({ open: !this.state.open })
@@ -37,17 +54,17 @@ class Collapsible extends React.Component {
     render() {
 
         const mystyle = {
-            maxWidth: this.props.width,
-            maxHeight: this.props.height,
+            maxWidth: this.state.pictureWidth,
+            maxHeight: this.state.pictureHeight,
 
         };
         return (<div>
-            <div style={{width: this.props.width}} onClick={(e) => this.togglePanel(e)} className='header'>
+            <div style={{width: this.state.pictureWidth}} onClick={(e) => this.togglePanel(e)} className='header'>
                 <img alt="image" src={this.props.src} style={mystyle}></img>
                 </div>
             {this.state.open ? (
                 <SlideDown className='content'>
-                        <div style={{width: this.props.width}}>
+                        <div style={{width: this.state.pictureWidth}}>
                         <div>
                             <h1>:)</h1>
                             <p> My content</p>
