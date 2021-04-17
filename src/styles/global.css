@@ -29,9 +29,8 @@ MARK - utility styles
 }
 
 section {
-  border-top: 1px solid black;
-
-  padding: 4rem;
+  /* border-top: 1px solid black; */
+  padding: 2rem;
 }
 
 /* 
@@ -53,9 +52,11 @@ a {
 button {
   background-color: transparent;
   color: inherit;
-  border-width: 0;
-  padding: 0;
+  border: 1px solid black;
   cursor: pointer;
+
+  padding: 0.5rem 1rem;
+  margin: 1rem;
 }
 figure {
   margin: 0;
@@ -97,7 +98,6 @@ fieldset {
   margin: 0;
 }
 
-
 body {
   font-family: "DM Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
@@ -118,29 +118,27 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
-@media (max-width: 767px){
-    .title-L {
-      font-size: 3rem;
-      margin-left: 1em;
-
-    }
-    .title-S {
-      visibility: collapse;
-    }
-    .grid-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      text-align: center;
-    }
-    .col-left {
-      display: flex;
-      flex-direction: column;
-      padding-left: 2rem;
-    }
-  
+@media (max-width: 767px) {
+  .title-L {
+    font-size: 3rem;
+    margin-left: 1em;
+  }
+  .title-S {
+    visibility: collapse;
+  }
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .col-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+  }
 }

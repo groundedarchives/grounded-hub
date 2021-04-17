@@ -15,7 +15,6 @@ import PunchingBag from "../../static/images/punching_bag.png"
 import SubwayPass from "../../static/images/transit_card.png"
 import Scrapbook from "../../static/images/scrapbook.jpg"
 
-
 export default function Home() {
   return (
     <>
@@ -23,16 +22,18 @@ export default function Home() {
       <section className="landing">
         <div className="landing-container">
           <div className="landing-header">
-            <h1 className="landing-h">Grounded.</h1>
+            <h1 className="landing-h">Grounded</h1>
           </div>
           <div className="landing-text">
-            <p className="landing-p">The stories of global events are often found in the objects left
-            behind: artifacts in museums, keepsakes passed through families,
-            etc. Recent events have forced many of us to find new meaning in the
-            spaces we inhabit and the objects that surround us.
+            <p className="landing-p">
+              The stories of global events are often found in the objects left
+              behind: artifacts in museums, keepsakes passed through families,
+              etc. Recent events have forced many of us to find new meaning in
+              the spaces we inhabit and the objects that surround us.
             </p>
           </div>
-          <div className="landing-button">
+          <div className="landing-buttons">
+            <button>See gallery</button>
             <button>Learn More</button>
           </div>
         </div>
@@ -44,7 +45,7 @@ export default function Home() {
           </div>
           <div className="about-right">
             <div className="about-header">
-              <h1>Explaining Briefly What Stroies Are</h1>
+              <h1>Explaining Briefly What Stories Are</h1>
             </div>
             <div className="about-paragraph">
               <p>
@@ -57,7 +58,7 @@ export default function Home() {
               </p>
             </div>
             <div className="about-button">
-              <button>Read More</button>
+              <button>Learn More</button>
             </div>
           </div>
         </div>
@@ -92,7 +93,6 @@ export default function Home() {
             <img src={SubwayPass} alt="Subway Pass" height="400"></img>
             <img src={Scrapbook} alt="Journal Collage" height="400"></img>
           </div>
-
         </div>
       </section>
       <Footer />

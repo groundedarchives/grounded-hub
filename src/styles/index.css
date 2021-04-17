@@ -2,31 +2,27 @@
 home.css -- styles to be applied on the home page 
 */
 
-.about {
-  padding: 10%;
+/* about section */
+
+.landing-h {
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  margin-bottom: 1rem;
 }
 
-.explore {
-  padding: 0;
+.landing-p {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.explore-header {
-  padding: 0 4rem;
-}
-
-.image_names {
-  display: none;
-}
-
-.scroll-container {
+.landing-buttons {
   display: flex;
-  overflow: scroll
+  justify-content: center;
 }
-.responsive {
-  max-width: 100%;
-  min-width: 40%;
-  height: auto;
-}
+
 @media (min-width: 768px) {
   .about-container {
     display: flex;
@@ -53,12 +49,7 @@ home.css -- styles to be applied on the home page
   .landing-text {
     width: 50%;
   }
-  .landing-p {
-    text-align: center;
-  }
-  .landing-h {
-    font-size: 3.5rem;
-  }
+
   .responsive {
     min-width: 100%;
     height: auto;
@@ -66,11 +57,36 @@ home.css -- styles to be applied on the home page
   h1 {
     font-size: 2.5rem;
   }
+}
 
+/* explore section */
+
+.explore {
+  padding: 0;
+}
+
+.explore-header {
+  padding: 0 4rem;
+}
+
+.image_names {
+  display: none;
+}
+
+.scroll-container {
+  display: flex;
+  overflow: scroll;
+}
+.responsive {
+  max-width: 100%;
+  min-width: 40%;
+  height: auto;
+}
+@media (min-width: 768px) {
   .explore {
     padding: 4rem 0 4rem 4rem;
   }
-  
+
   .explore-header {
     display: flex;
     justify-content: space-between;
