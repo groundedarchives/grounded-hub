@@ -24,11 +24,12 @@ MARK - utility styles
   /* 6 x root font size = 6 x 16 = 96px */
   font-size: 3rem;
 }
+.title-S {
+  font-size: 1.5rem;
+}
 
 section {
   border-top: 1px solid black;
-
-  height: 100vh;
 
   padding: 4rem;
 }
@@ -96,6 +97,7 @@ fieldset {
   margin: 0;
 }
 
+
 body {
   font-family: "DM Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
@@ -104,4 +106,41 @@ body {
   color: #222;
 
   margin: 0px;
+}
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: 1em;
+  margin-top: 2em;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 767px){
+    .title-L {
+      font-size: 3rem;
+      margin-left: 1em;
+
+    }
+    .title-S {
+      visibility: collapse;
+    }
+    .grid-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+    }
+    .col-left {
+      display: flex;
+      flex-direction: column;
+      padding-left: 2rem;
+    }
+  
 }

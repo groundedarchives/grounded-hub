@@ -2,17 +2,25 @@
 home.css -- styles to be applied on the home page 
 */
 
-.explore-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.explore-body {
-    display: flex;
-    justify-content: left;
-}
 .about {
   padding: 10%;
+}
+
+.explore {
+  padding: 0;
+}
+
+.explore-header {
+  padding: 0 4rem;
+}
+
+.image_names {
+  display: none;
+}
+
+.scroll-container {
+  display: flex;
+  overflow: scroll
 }
 .responsive {
   max-width: 100%;
@@ -55,7 +63,28 @@ home.css -- styles to be applied on the home page
     min-width: 100%;
     height: auto;
   }
-}
-h1 {
-  font-size: 2.5rem;
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .explore {
+    padding: 4rem 0 4rem 4rem;
+  }
+  
+  .explore-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .explore-body {
+    display: flex;
+    justify-content: left;
+  }
+
+  .image_names {
+    display: block;
+    width: 40rem;
+  }
 }
