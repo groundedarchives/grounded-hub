@@ -119,8 +119,9 @@ home.css -- styles to be applied on the home page
   overflow: scroll;
 }
 
-.scroll-container > img {
+.scroll-container > div {
   margin-right: 2rem;
+  text-align: center;
 }
 
 @media (min-width: 768px) {

@@ -1,6 +1,7 @@
 import React from "react"
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
+import GalleryItem from "../components/GalleryItem"
 import { Link } from "gatsby"
 import "../styles/global.css"
 import "../styles/index.css"
@@ -96,7 +97,17 @@ export default function Home() {
           </div>
 
           <div className="scroll-container">
-            <img src={HomeOffice} alt="Home office" height="400"></img>
+            <GalleryItem name={HomeOffice}></GalleryItem>
+            <GalleryItem name={Scrabble}></GalleryItem>
+            <GalleryItem name={Plant}></GalleryItem>
+            <GalleryItem name={HarryPotter}></GalleryItem>
+            <GalleryItem name={Candles}></GalleryItem>
+            <GalleryItem name={Pebble}></GalleryItem>
+            <GalleryItem name={PunchingBag}></GalleryItem>
+            <GalleryItem name={SubwayPass}></GalleryItem>
+            <GalleryItem name={Scrapbook}></GalleryItem>
+            
+            {/* <img src={HomeOffice} alt="Home office" height="400"></img>
             <img src={Scrabble} alt="Scrabble Set" height="400"></img>
             <img src={Plant} alt="Potted Plant" height="400"></img>
             <img src={HarryPotter} alt="Harry Potter 7" height="400"></img>
@@ -104,7 +115,7 @@ export default function Home() {
             <img src={Pebble} alt="River Pebble" height="400"></img>
             <img src={PunchingBag} alt="Punching Bag" height="400"></img>
             <img src={SubwayPass} alt="Subway Pass" height="400"></img>
-            <img src={Scrapbook} alt="Journal Collage" height="400"></img>
+          <img src={Scrapbook} alt="Journal Collage" height="400"></img> */}
           </div>
         </div>
       </section>
