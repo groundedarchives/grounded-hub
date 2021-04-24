@@ -2,9 +2,11 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import SlideOut from "@ijsto/react-slideout"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
+import CloseIcon from "@material-ui/icons/Close"
 
 import "../styles/global.css"
 import "../styles/nav.css"
+import { Close } from "@material-ui/icons"
 
 export default function Nav() {
   const [slideOutIsOpen, setSlideOutIsOpen] = useState(false)
@@ -23,9 +25,15 @@ export default function Nav() {
     if (isDesktop) {
       return (
         <>
-          <Link to="/gallery">Gallery</Link>
-          <Link to="/visualization">Visualization</Link>
-          <Link to="/about">About</Link>
+          <Link className="navItem" to="/gallery">
+            Gallery
+          </Link>
+          <Link className="navItem" to="/visualization">
+            Visualization
+          </Link>
+          <Link className="navItem" to="/about">
+            About
+          </Link>
         </>
       )
     } else {
@@ -44,10 +52,31 @@ export default function Nav() {
           <SlideOut
             isOpen={slideOutIsOpen}
             onClose={closeSlideOut}
+            closeComponent={
+              <CloseIcon fontSize="large" className="closeIcon" />
+            }
             offsetTop={0}
             slideFrom="right"
           >
-            <h2>My Slide Out</h2>
+            <div className="hamburgerBody">
+              <div className="hamburgerItems">
+                <div className="hamburgerItem">
+                  <Link to="/">Grounded</Link>
+                </div>
+                <div className="hamburgerItem">
+                  <Link to="/gallery">Gallery</Link>
+                </div>
+                <div className="hamburgerItem">
+                  <Link to="/visualization">Visualization</Link>
+                </div>
+                <div className="hamburgerItem">
+                  <Link to="/about">About</Link>
+                </div>
+                <div className="hamburgerItem">
+                  <Link to="/contact">Contact</Link>
+                </div>
+              </div>
+            </div>
           </SlideOut>
         </>
       )
@@ -56,7 +85,9 @@ export default function Nav() {
 
   return (
     <nav>
-      <Link to="/">Grounded</Link>
+      <Link className="navItem" to="/">
+        Grounded
+      </Link>
       <div className="subpages">{mobileOrDesktopNav()}</div>
     </nav>
   )
