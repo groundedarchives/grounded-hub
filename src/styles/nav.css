@@ -1,14 +1,18 @@
 nav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    padding: 2rem;
+  padding: 2rem;
+}
+
+a {
+  line-height: 47px;
 }
 
 .subpages {
-    width: fit-content;
+  width: fit-content;
 }
 
 .subpages a {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
