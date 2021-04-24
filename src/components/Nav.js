@@ -34,6 +34,9 @@ export default function Nav() {
           <Link className="navItem" to="/about">
             About
           </Link>
+          <Link className="navItem" to="/contact">
+            Contact
+          </Link>
         </>
       )
     } else {

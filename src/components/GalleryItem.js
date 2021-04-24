@@ -6,7 +6,7 @@ export default function GalleryItem(props) {
     return (
         <div>
             <img src={props.name} height="300"></img>
-            <div className="audio-player"></div>
+            <audio className="audio-player"></audio>
             <button className="pop-up-button">See Full Transcription</button>
         </div>
     )
