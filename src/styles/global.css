@@ -48,6 +48,10 @@ section {
   }
 }
 
+.logoText {
+  text-transform: uppercase;
+}
+
 /* 
 MARK - CSS resets
 */

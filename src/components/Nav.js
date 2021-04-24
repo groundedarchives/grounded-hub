@@ -61,7 +61,9 @@ export default function Nav() {
             <div className="hamburgerBody">
               <div className="hamburgerItems">
                 <div className="hamburgerItem">
-                  <Link to="/">Grounded</Link>
+                  <Link className="logoText" to="/">
+                    Grounded
+                  </Link>
                 </div>
                 <div className="hamburgerItem">
                   <Link to="/gallery">Gallery</Link>
