@@ -97,25 +97,17 @@ export default function Home() {
           </div>
 
           <div className="scroll-container">
-            <GalleryItem name={HomeOffice}></GalleryItem>
-            <GalleryItem name={Scrabble}></GalleryItem>
-            <GalleryItem name={Plant}></GalleryItem>
-            <GalleryItem name={HarryPotter}></GalleryItem>
-            <GalleryItem name={Candles}></GalleryItem>
-            <GalleryItem name={Pebble}></GalleryItem>
-            <GalleryItem name={PunchingBag}></GalleryItem>
-            <GalleryItem name={SubwayPass}></GalleryItem>
-            <GalleryItem name={Scrapbook}></GalleryItem>
+            <GalleryItem name={HomeOffice} transcription="home office transcription"></GalleryItem>
+            <GalleryItem name={Scrabble} transcription="scrabble transcription"></GalleryItem>
+            <GalleryItem name={Plant} transcription=""></GalleryItem>
+            <GalleryItem name={HarryPotter} transcription=""></GalleryItem>
+            <GalleryItem name={Candles} transcription=""></GalleryItem>
+            <GalleryItem name={Pebble} transcription=""></GalleryItem>
+            <GalleryItem name={PunchingBag} transcription=""></GalleryItem>
+            <GalleryItem name={SubwayPass} transcription=""></GalleryItem>
+            <GalleryItem name={Scrapbook} transcription=""></GalleryItem>
             
-            {/* <img src={HomeOffice} alt="Home office" height="400"></img>
-            <img src={Scrabble} alt="Scrabble Set" height="400"></img>
-            <img src={Plant} alt="Potted Plant" height="400"></img>
-            <img src={HarryPotter} alt="Harry Potter 7" height="400"></img>
-            <img src={Candles} alt="Candle Set" height="400"></img>
-            <img src={Pebble} alt="River Pebble" height="400"></img>
-            <img src={PunchingBag} alt="Punching Bag" height="400"></img>
-            <img src={SubwayPass} alt="Subway Pass" height="400"></img>
-          <img src={Scrapbook} alt="Journal Collage" height="400"></img> */}
+  
           </div>
         </div>
       </section>
