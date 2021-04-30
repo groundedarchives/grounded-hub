@@ -1,6 +1,7 @@
 import React from "react"
 import "../styles/global.css"
 import "../styles/index.css"
+import ReactAudioPlayer from 'react-audio-player';
 
 export default function GalleryItem(props) {
     return (

@@ -3,6 +3,8 @@ import { SlideDown } from "react-slidedown"
 import "react-slidedown/lib/slidedown.css"
 import Card from "react-bootstrap/Card"
 import "../styles/gallery.css"
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 
 class Collapsible extends React.Component {
   constructor(props) {
@@ -13,12 +15,15 @@ class Collapsible extends React.Component {
       height: 0,
       pictureWidth: this.props.width,
       pictureHeight: this.props.height,
+      showAudioPlayer:true
     }
     this.togglePanel = this.togglePanel.bind(this)
+    this.getAudioPlayerShow=this.getAudioPlayerShow.bind(this)
   }
 
   componentDidMount() {
     this.updateWindowDimensions()
+    this.getAudioPlayerShow();
     window.addEventListener("resize", this.updateWindowDimensions.bind(this))
   }
 
@@ -26,6 +31,14 @@ class Collapsible extends React.Component {
     window.removeEventListener("resize", this.updateWindowDimensions.bind(this))
   }
 
+  getAudioPlayerShow() {
+    if (this.props.audioSource=="") {
+      console.log("do not show audio player")
+      this.setState({
+        showAudioPlayer:false
+      })
+    }
+  }
   updateWindowDimensions() {
     this.setState(
       {
@@ -63,11 +76,20 @@ class Collapsible extends React.Component {
           <img alt="image" src={this.props.src} style={mystyle}></img>
         </div>
         {this.state.open ? (
-          <SlideDown className="content">
-            <div style={{ width: this.state.pictureWidth }}>
-              <div>
-                <h1>:)</h1>
-                <p> My content</p>
+          <SlideDown className="content" style={{ width: this.state.pictureWidth }} className="row-center">
+            <div style={{ width: this.state.pictureWidth}} >
+                {this.state.showAudioPlayer ? (
+                <AudioPlayer
+                src={this.props.audioSource}
+                customAdditionalControls={[]}
+                customVolumeControls={[]}
+                defaultCurrentTime="" 
+                defaultDuration=""
+                style={{width:'300px'}}
+                ></AudioPlayer>
+                ):null}
+              <div className="transcript" style={{ width: this.state.pictureWidth}} className="row-center">
+                <p>{this.props.transcript}</p>
               </div>
             </div>
           </SlideDown>

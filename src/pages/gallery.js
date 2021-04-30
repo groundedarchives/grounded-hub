@@ -34,8 +34,8 @@ export default function Gallery() {
               <Grid container
                 spacing={1} >
                 {photos.map((image, i) => (
-                  <Grid item s className="small-margin">
-                    <GalleryModal key={i} src={image.src} width={image.thumbnailWidth} height={image.thumbnailHeight}></GalleryModal>
+                  <Grid item s className="small-margin" key={image.src}>
+                    <GalleryModal key={image.src} src={image.src} width={image.thumbnailWidth} transcript={image.transcript} themes={image.themes} audioSource={image.audioSource} height={image.thumbnailHeight}></GalleryModal>
                   </Grid>
                 ))}
               </Grid>
