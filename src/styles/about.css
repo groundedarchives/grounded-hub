@@ -1,0 +1,24 @@
+.body-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 70%; */
+}
+.body-header {
+    display: flex;
+    justify-content: center;
+}
+.body-picture {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.body-text-top {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.body-text-bottom {
+    display: flex;
+    justify-content: center;
+}
