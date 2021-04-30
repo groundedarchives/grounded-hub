@@ -18,7 +18,7 @@ export default class GalleryItem extends React.Component {
     render() {
         return (
             <div>
-                <img src={this.state.name} height="300"></img>
+                <img src={this.state.name}></img>
                 <audio className="audio-player"></audio>
                 <Popup trigger={<button> See Full Transcription</button>} modal>
                     <div>{this.state.transcription}</div>
