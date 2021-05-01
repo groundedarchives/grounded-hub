@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 import ArchiveInfo from "../components/ArchiveInfo"

@@ -1,16 +1,24 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import AudioPlayer from "react-h5-audio-player"
 import "react-h5-audio-player/lib/styles.css"
 
 export default function DetailedArchiveInfo({ image, toggleInfo }) {
-  const handleClick = () => {
+  const imageInfo = useRef(null)
+
+  const handleClose = () => {
     toggleInfo(-1)
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      imageInfo.current.scrollIntoView({ behavior: "smooth" })
+    }, 100)
+  }, [])
+
   return (
-    <div className="archiveInfo" key={-1}>
+    <div className="archiveInfo" key={-1} ref={imageInfo}>
       <div className="header">
-        <button onClick={handleClick}>x</button>
+        <button onClick={handleClose}>x</button>
       </div>
       <div className="body">
         <div>
