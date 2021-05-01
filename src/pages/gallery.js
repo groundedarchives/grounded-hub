@@ -1,18 +1,51 @@
 import React, { useState } from "react"
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
+import DetailedSubmissionItem from "../components/DetailedSubmissionItem"
 import Form from "react-bootstrap/Form"
-import AudioPlayer from "react-h5-audio-player"
+import isEqual from "lodash/isEqual"
+
 import "../styles/gallery.css"
-import "react-h5-audio-player/lib/styles.css"
 import { photos } from "../components/Photos"
 
 export default function Gallery(props) {
+  const [displayedSubmissions, setDisplayedSubmissions] = useState(
+    photos.map((image, i) => (
+      <img
+        key={i}
+        className="gridImage"
+        src={image.src}
+        onClick={() => toggleImageDetails(image, i)}
+      ></img>
+    ))
+  )
   const [selectedSubmission, setSelectedSubmission] = useState(null)
   const [checkedItems, setCheckedItems] = useState(new Map())
 
-  const showImage = image => {
-    console.log(image)
+  const addToArray = (original, indexToAddAt, itemToAdd) => [
+    ...original.slice(0, indexToAddAt),
+    itemToAdd,
+    ...original.slice(indexToAddAt),
+  ]
+
+  const toggleImageDetails = (image, arrayIndex) => {
+    if (selectedSubmission != null && image.src === selectedSubmission.src) {
+      setDisplayedSubmissions(displayedSubmissions)
+      setSelectedSubmission(null)
+      return
+    }
+
+    const submissionsWithDetailView = addToArray(
+      displayedSubmissions,
+      arrayIndex + 1,
+      <DetailedSubmissionItem
+        key="detailed"
+        image={image}
+        hideImage={toggleImageDetails}
+      />
+    )
+
+    setDisplayedSubmissions(submissionsWithDetailView)
     setSelectedSubmission(image)
   }
 
@@ -90,29 +123,7 @@ export default function Gallery(props) {
               <button className="button">Apply Changes</button>
             </Form>
           </div>
-          <div className="grid">
-            {photos.map((image, i) => (
-              <div className="imageFrame">
-                <img
-                  className="gridImage"
-                  onClick={() => showImage(image)}
-                  src={image.src}
-                ></img>
-              </div>
-            ))}
-            {selectedSubmission ? (
-              <div className="submissionContent">
-                <AudioPlayer
-                  src={selectedSubmission.audioSource}
-                  customAdditionalControls={[]}
-                  customVolumeControls={[]}
-                  defaultCurrentTime=""
-                  defaultDuration=""
-                ></AudioPlayer>
-                <p>{selectedSubmission.transcript}</p>
-              </div>
-            ) : null}
-          </div>
+          <div className="grid">{displayedSubmissions}</div>
         </div>
       </section>
       <Footer />
