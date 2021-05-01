@@ -1,52 +1,23 @@
 import React, { useState } from "react"
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
-import DetailedSubmissionItem from "../components/DetailedSubmissionItem"
+import ArchiveInfo from "../components/ArchiveInfo"
 import Form from "react-bootstrap/Form"
-import isEqual from "lodash/isEqual"
 
 import "../styles/gallery.css"
 import { photos } from "../components/Photos"
 
 export default function Gallery(props) {
-  const [displayedSubmissions, setDisplayedSubmissions] = useState(
-    photos.map((image, i) => (
-      <img
-        key={i}
-        className="gridImage"
-        src={image.src}
-        onClick={() => toggleImageDetails(image, i)}
-      ></img>
-    ))
-  )
   const [selectedSubmission, setSelectedSubmission] = useState(null)
   const [checkedItems, setCheckedItems] = useState(new Map())
 
-  const addToArray = (original, indexToAddAt, itemToAdd) => [
-    ...original.slice(0, indexToAddAt),
-    itemToAdd,
-    ...original.slice(indexToAddAt),
-  ]
-
-  const toggleImageDetails = (image, arrayIndex) => {
-    if (selectedSubmission != null && image.src === selectedSubmission.src) {
-      setDisplayedSubmissions(displayedSubmissions)
+  const toggleImageDetails = arrayIndex => {
+    if (selectedSubmission !== null) {
       setSelectedSubmission(null)
       return
+    } else {
+      setSelectedSubmission(arrayIndex)
     }
-
-    const submissionsWithDetailView = addToArray(
-      displayedSubmissions,
-      arrayIndex + 1,
-      <DetailedSubmissionItem
-        key="detailed"
-        image={image}
-        hideImage={toggleImageDetails}
-      />
-    )
-
-    setDisplayedSubmissions(submissionsWithDetailView)
-    setSelectedSubmission(image)
   }
 
   return (
@@ -123,7 +94,17 @@ export default function Gallery(props) {
               <button className="button">Apply Changes</button>
             </Form>
           </div>
-          <div className="grid">{displayedSubmissions}</div>
+          <div className="grid">
+            {photos.map((image, i) => (
+              <ArchiveInfo
+                key={i}
+                image={image}
+                arrayIndex={i}
+                toggleInfo={toggleImageDetails}
+                willShowInfo={i === selectedSubmission}
+              />
+            ))}
+          </div>
         </div>
       </section>
       <Footer />
