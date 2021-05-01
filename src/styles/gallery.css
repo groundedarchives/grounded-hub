@@ -1,17 +1,7 @@
-.header:hover {
+/* .header:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 5px 15px #5d6b6b;
-}
-
-.filter-col {
-  min-width: 10em;
-}
-
-@media (min-width: 768px) {
-  .filter-col {
-    margin-right: 3em;
-  }
-}
+} */
 
 .content {
   cursor: pointer;
@@ -49,9 +39,24 @@
   flex-direction: column;
 }
 
-/*  */
+.filter-col {
+  min-width: 10em;
+}
 
 @media (min-width: 768px) {
+  .filter-col {
+    margin-right: 5em;
+  }
+}
+
+/*  */
+
+.pageSubtitle {
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
   .grid-container {
     display: flex;
   }
@@ -75,15 +80,64 @@
 
 .archiveInfo {
   grid-column: 1/-1;
-
-  display: flex;
-
   width: 100%;
   min-height: 400px;
 
-  background-color: #f2f2f2;
+  padding: 2rem;
 }
 
-.imageThumbnail {
-  width: 150px;
+.imageInfo .transcriptSubtitle {
+  font-weight: 700;
+}
+
+.rhap_container {
+  background-color: unset;
+  box-shadow: none;
+
+  margin-bottom: 2rem;
+}
+
+.rhap_progress-container {
+  margin: 0 calc(10px + 3%);
+}
+
+.rhap_progress-bar-show-download {
+  background-color: black;
+  height: 3px;
+}
+
+.rhap_progress-indicator {
+  height: 16px;
+  width: 16px;
+  top: -7px;
+
+  background-color: #000;
+}
+
+.rhap_main-controls-button {
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .body {
+    display: flex;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .archiveInfo .body > div {
+    margin-right: 3rem;
+  }
+
+  .imageThumbnail {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .imageInfo {
+    width: 100%;
+  }
 }

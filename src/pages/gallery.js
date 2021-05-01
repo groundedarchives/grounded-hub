@@ -24,7 +24,13 @@ export default function Gallery(props) {
     <>
       <Nav />
       <section>
-        <p className="title-L">Gallery</p>
+        <h1 className="title-L">The Archive</h1>
+        <p className="pageSubtitle">
+          The Archive includes all submissions in their original form. View the
+          images, and listen to the audio recordings at random, or use the
+          Sorting tool to discover the salient themes and patterns that emerged
+          from these stories.
+        </p>
         <div className="grid-container">
           <div className="filter-col">
             <p className="title-S">Filter Entries</p>
