@@ -5,7 +5,7 @@ export const photos = [
       thumbnailWidth: 260.7,
       thumbnailHeight: 418.11,
       audioSource:"",
-      themes:[],
+      themes:["Appreciation"],
       transcript:"yay animal crossing"
     },
     {
@@ -144,8 +144,8 @@ export const photos = [
         thumbnailWidth: 403.2,
         thumbnailHeight: 302.4,
         audioSource:"Audio/office_home.mp3",
-        themes:[],
-        transcript:""
+        themes:["Human Connection", "Household Items", "Perseverance" ],
+        transcript:"You know before saying anything, I think it's important to note that, at a time when hundreds of thousands of Americans have died and millions have lost their jobs, I'm extraordinarily lucky to be healthy and employed and you know, folks like me who have been lucky enough to not be personally affected by the Coronavirus, and have jobs and can work from home. One of the biggest difficulties has been the blurring of the line between personal and professional life. Right, um, gone is the daily commute to collect your thoughts on your way to work and personal interactions with your coworkers, the physical distinction of leaving work for the day and being done. And so, with these distinctions gone, everything just sort of bleeds together. You know, work and personal become one and days blend together and slowly blend into weeks. But, you know, as stressful and disorienting as this often is, it's still so removed from the pain and suffering that this pandemic has caused. And, this really hit home last week when on a call from work, we had heard from a local doctor and he was talking about the lived reality of the reason that we are all at home. You know, all this stress about these blurred days just kind of came crashing in as– or crashing away as he described seeing the most death he's seen in his time as a doctor. And it really makes the problem of working at home seem so small and insignificant when you know that that's really what's happening out there and, I don't know, this whole thing's very strange but for as long as this stays our reality people are gonna... You know I’ll keep working at this plastic desk next to my bed and doing what I can to protect those more vulnerable than myself."
     },
 
     {
@@ -154,8 +154,8 @@ export const photos = [
         thumbnailWidth: 345.9,
         thumbnailHeight: 343.2,
         audioSource:"Audio/pebble.mp3",
-        themes:[],
-        transcript:""
+        themes:["Feeling Grounded", "Perseverance"],
+        transcript:"Alright, well, there's a lot that's happened over the past few months. There's always a lot going on, and it always seems like there's fifty awful things that are happening outside my home, and it's hard not to feel like I need to engage with them in some way. Yet, whenever I do or whenever many of the people around me do, it's overwhelming, and it can feel like there's nothing really good going on, anything really anchoring us. So, there's this rock that I have. It's smooth. It's about the size of a few quarters. It's a river pebble. It's grey. It's kind of marbled. You look at it and you sort of see another layer to it, like there's the surface and then the longer you look at it, the more you see– the more cracks and ridges you see kind of going away into the depths. And, it's really calming to hold. It feels like something hard and certain is there. And, it's just the right size for you to hold in your hand and fidget with. Whether I am sitting somewhere, like in a meeting, or just anything really. When anything stressful is going on it's become a habit to take this rock and just to hold it and it's relaxing. It really does wonders, I think. And, I'm glad that there's something, just one thing, right now that's certain like just this tiny rock that somehow makes all the difference for me to focus on and and, for a moment, stop thinking about the virus, stop thinking about all the violence that's occurring right now about all of these larger things that I feel like I have no control over, and just center myself on just a rock that I just picked up somewhere. I don't even remember where I have it from. And yet, it does it's job, really. I hope that others have also been able to find something like this for themselves and be able to take on a new meaning in a time when really all of us need something to help ground ourselves."
     },
     {
         src:"images/pet_rat.jpg",
@@ -172,7 +172,7 @@ export const photos = [
         thumbnailWidth: 251.9,
         thumbnailHeight: 256.2,
         audioSource:"audioStory/rszf-508l.mp3",
-        transcript:"",
+        transcript:"Speaker 1: So mommy, can you tell me about an object or an activity or something that has been especially meaningful to you during this time that we've spent at home during this pandemic? <br></br> Speaker 2: Yeah. Recently, I have started to work on my YouTube blog, which is a cooking channel. I started this even before the COVID-19 had come up. But this COVID-19 had given me a lot of time to cook new dishes for my kids. So I was experimenting a lot. And it came up very well. And my kids were happy too. And I was happy to make them nice dishes for them. <br></br> Speaker 1: And can you tell us about some of those, I guess, hawker food dishes like hokkien mee and bee hoon that traditionally, we would go and eat at a hawker center. But you figured out how to make that.<br><br> Speaker 2: Because during COVID-19 situation, I thought it's not that safe for that safe for our family to go out and have dinner. So usually, I came up with some new recipes that my kids would like to eat. So luckily, I had a Malaysian friend. So I used to always refer to her for some help on making some new recipes, like hokkien mee and bee hoon. And she was very good in all those, and she gave me some ideas how to work on it. So I tried, and it was really a very good dish that came out and my family liked it. So I was very happy about it when my family enjoyed eating them. So and it has deliberately become very important, very important dish in our meal plan. So it is wonderful. <br></br> Speaker 2: Because during COVID-19 situation, I thought it's not that safe for that safe for our family to go out and have dinner. So usually, I came up with some new recipes that my kids would like to eat. So luckily, I had a Malaysian friend. So I used to always refer to her for some help on making some new recipes, like hokkien mee and bee hoon. And she was very good in all those, and she gave me some ideas how to work on it. So I tried, and it was really a very good dish that came out and my family liked it. So I was very happy about it when my family enjoyed eating them. So and it has deliberately become very important, very important dish in our meal plan. So it is wonderful. <br></br> Speaker 2: I will not say it was same because when everybody or home, I think the workload was getting a bit more on me. So I tried to manage my time, it helped me to do more of meal planning for my kids so that they eat healthily. So I used to meal plan and see that my kids have a wholesome meal, they are eating healthily. And I was able to see that they had taken on time. As soon as during this time, I used to always experiment doing lot of new recipes. This enhanced my cooking skills. And I also it like it opened my eyes that what I knew before was not enough. And there are so much things to learn. Cooking is a vast area where you can learn new things, as well as the experiment with it. And it's a lot of fun doing that. <br></br> Speaker 1: And I guess we're very lucky that, well, I can't really cook. But I did teach you some of the things that I learned how to cook from my friends. <br></br> Speaker 2: Yeah, actually, you're very good at baking. And that's a thing that you really enjoy to do. Actually, I, in the beginning to say the truth, I didn't have much interest in baking. But after my daughter joined me, I started to learn from her know how to bake things. And now I'm doing better than her hopefully I think so. <br></br> Speaker 2: Yeah, actually, you're very good at baking. And that's a thing that you really enjoy to do. Actually, I, in the beginning to say the truth, I didn't have much interest in baking. But after my daughter joined me, I started to learn from her know how to bake things. And now I'm doing better than her hopefully I think so. <br></br> Speaker 2: Yeah, actually, you're very good at baking. And that's a thing that you really enjoy to do. Actually, I, in the beginning to say the truth, I didn't have much interest in baking. But after my daughter joined me, I started to learn from her know how to bake things. And now I'm doing better than her hopefully I think so. <br></br> Speaker 1: So I guess someone's calling in. But thank you, mommy for for adding your story to this archive. <br></br> Speaker 2: Thank you. Thank you so much.",
         themes: ["Human Connection", "Learning New Things"]
     },
     {
@@ -182,7 +182,7 @@ export const photos = [
         thumbnailHeight: 403.2,
         audioSource:"Audio/plant_vase.mp3",
         themes: ["Appreciation", "Perseverance", "Household Items"],
-        transcript:""
+        transcript:"So I bought this plant last September.[and] at the time, it was blooming these really bright yellow flowers.  It was really beautiful but when I went abroad in the spring, I had to leave it with one of my roommates so that he could take care of it until I got back.  But of course when the pandemic hit, he couldn’t go back to the dorm so the plant was left there, untouched and in the dark for about four months.  You would think that when my roommate went back to get his things from our dorm in June, the plant would have been completely dried out and withered. I actually think we had both probably forgotten about it by then. But even though the plant was in pretty rough shape, there was definitely some green hiding under there.  So I pulled off the leaves and I gave it some water and put it on a windowsill and a few weeks later, it actually looked healthy again and has since grown quite a bit. And I really wouldn’t be surprised if it starts blooming again sometime soon.  This plant is a fighter I would say, and I know this time has been hard on everyone: some more than others. But I think that we all just kind of need to hold a little longer and, I don’t know, I’m feeling very hopeful."
     },
     {
         src:"images/punching_bag.png",
@@ -191,7 +191,7 @@ export const photos = [
         thumbnailHeight: 403.2,
         audioSource:"Audio/punching_bag.mp3",
         themes:[],
-        transcript:""
+        transcript:"So the object that I chose to talk about is the punching bag that hangs in my basement in my childhood home. And, I never really paid attention to it until I found myself quarantined in the basement and dealing with a lot of negative emotions after coming back from being abroad and feeling frustrated, uncertain, lonely, and wondering why all this was happening. So, one day, on a whim, I decided to try hitting the punching bag. I was really bad at it at first, but eventually, as I kept going, I was able to put more and more power into my punches and channel all of my negative sentiments into this physical outlet. Hitting the punching bag became a part of my weekly routine and it became a cathartic way for me to kind of reset for my week and remind myself that there are things that I can control— little things I can do, including, staying in touch and controlling my attitude and my emotions."
     },
     {
         src:"images/quilt_blanket.jpg",
@@ -209,7 +209,7 @@ export const photos = [
         thumbnailHeight: 338.1,
         audioSource:"Audio/sanitizer.mp3",
         themes:["Household Items", "Human Connection"],
-        transcript:""
+        transcript:"So I ended up taking a picture of this little bottle of hand sanitizer and the reason I chose it was because I really feel that it’s kind of a symptom; it reminds kind of how everything has changed in the world in terms of public spots and hygiene and all that.  At least to me, I feel like it will be hard for me, at least mentally, to go back to the way things were.  I feel like I don’t know if I can even see crowded concert venues, crowded sidewalks and streets and doors and all that kind of stuff the same way again; just knowing how much the germs and how unhygienic it can be. And it’s just crazy how we took so much of that stuff; we just kind of put it under the rug more or less and just kind of went about our lives.  When in reality it's just been a massive breeding ground for who knows what so, yeah. This tiny little bottle of sanitizer reminds me of that whole movement, the whole kind of way everything has changed now and the fact, that I have one in my room, that I carry it around everywhere when I go outside. A little bottle just, you know, I feel like for me it’s just a lot. I feel like again just changed everything. And the fact that even these kinds of things are so hard to find now. It’s even more telling of the times and how, as a society we’ve been really unprepared for this whole pandemic and how there’s a lot of change that needs to happen if we are to prevent this kind of thing from happening again."
     },
     {
         src:"images/scrabble.jpg",
@@ -244,7 +244,7 @@ export const photos = [
         thumbnailWidth: 240,
         thumbnailHeight: 240,
         audioSource:"",
-        themes:[],
+        themes:["Human Connection"],
         transcript:"I miss those euphoric crowd sing alongs. Dancing in a sea of people. Discovering new music acts to love. The indescribable connection between fans."
     },
     {
@@ -338,7 +338,7 @@ export const photos = [
         thumbnailWidth: 339.15,
         thumbnailHeight: 521.7,
         audioSource:"",
-        themes:[],
+        themes:["Appreciation", "Perseverance"],
         transcript:"This pandemic has been terrible in so many ways, but it has also offered the opportunity for self-reflection and self-growth. I bought this water bottle at the beginning of quarantine, and it represents the new mindset and  new goals that I had developed and have worked on since. First of all, it helped me improve my health— I decided to work out more often, drink more water, and eat healthier. I worked hard and my water bottle carried me through it, offering an ice cold reward whenever I succeeded. Second, I learned how to cook! Eating healthier meant learning what I should and shouldn’t put into my body, and how to find ways to control it. I still go for the occasional McDonalds or Taco Bell run, but also have created some of the most delicious meals I have ever had. Now, living apart from my parents,  I am so thankful that I took the time to learn. My water bottle has stayed with me throughout quarantine and will hopefully last me through the crazy, messed up year that is 2020 (it is also the longest I have had one without losing it, so that’s a good sign!). Here we go!"
     },
     {
