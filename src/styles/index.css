@@ -127,11 +127,22 @@ home.css -- styles to be applied on the home page
 .scroll-container > div {
   margin-right: 2rem;
   text-align: center;
+  width: 100%;
 }
 
 .scroll-container > div > img {
   width: 100%;
   height: auto;
+}
+
+.audio-player {
+  justify-content: center;
+  width: 100%;
+}
+
+.popup-content {
+  height: 70%;
+  overflow: scroll;
 }
 
 @media (min-width: 768px) {
@@ -153,7 +164,6 @@ home.css -- styles to be applied on the home page
 
   .explore-header .gallery-text {
     display: block;
-
     margin-left: 2rem;
     min-width: 200px;
     max-width: 350px;
