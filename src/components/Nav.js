@@ -6,7 +6,6 @@ import CloseIcon from "@material-ui/icons/Close"
 
 import "../styles/global.css"
 import "../styles/nav.css"
-import { Close } from "@material-ui/icons"
 
 export default function Nav() {
   const [slideOutIsOpen, setSlideOutIsOpen] = useState(false)
@@ -89,7 +88,7 @@ export default function Nav() {
   }
 
   return (
-    <nav>
+    <nav style={{ position: "relative", zIndex: "11" }}>
       <Link className="navItem" to="/">
         Grounded
       </Link>

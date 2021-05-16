@@ -25,7 +25,7 @@ export default function DetailedArchiveInfo({ image, toggleInfo }) {
           <img className="imageThumbnail" src={image.src} alt="" />
         </div>
         <div className="imageInfo">
-          {image.audioSource != "" ? (
+          {image.audioSource !== "" ? (
             <>
               <AudioPlayer
                 src={image.audioSource}

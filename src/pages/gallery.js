@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react"
+import React, { useState } from "react"
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 import ArchiveInfo from "../components/ArchiveInfo"
@@ -6,76 +6,69 @@ import Form from "react-bootstrap/Form"
 
 import "../styles/gallery.css"
 import { photos } from "../components/Photos"
-import { ControlPointSharp } from "@material-ui/icons"
 
 const checkboxes = [
   {
-    id:"human_connections_select",
-    label:"Human Connections",
-    name:"Human Connections",
-    value:"Human Connections"
+    id: "human_connections_select",
+    label: "Human Connections",
+    name: "Human Connections",
+    value: "Human Connections",
   },
   {
-    id:"channeling_select",
-    label:"Channeling Negativity",
-    name:"Channeling Negativity",
-    value:"Channeling Negativity"
+    id: "channeling_select",
+    label: "Channeling Negativity",
+    name: "Channeling Negativity",
+    value: "Channeling Negativity",
   },
   {
-    id:"perseverance_select",
-    label:"Perseverance",
-    name:"Perseverance",
-    value:"Perseverance"
-  }, 
-  {
-    id:"feeling_grounded_select",
-    label:"Feeling Grounded",
-    name:"Feeling Grounded",
-    value:"Feeling Grounded",
-
+    id: "perseverance_select",
+    label: "Perseverance",
+    name: "Perseverance",
+    value: "Perseverance",
   },
   {
-    id:"household_item_select",
-    label:"Household Items",
-    name:"Household Items",
-    value:"Household Items"
-
+    id: "feeling_grounded_select",
+    label: "Feeling Grounded",
+    name: "Feeling Grounded",
+    value: "Feeling Grounded",
   },
   {
-    id:"learning_select",
-    label:"Learning New Things",
-    name:"Learning New Things",
-    value:"Learning New Things"
-
-  }, {
-    id:"calm_select",
-    label:"Finding Calm",
-    name:"Finding Calm",
-    value:"Finding Calm"
-
+    id: "household_item_select",
+    label: "Household Items",
+    name: "Household Items",
+    value: "Household Items",
   },
   {
-    id:"appreciation_select",
-    label:"Appreciation",
-    name:"Appreciation",
-    value:"Appreciation"
-
-  }, {
-    id:"escape_select",
-    label:"Having an Escape",
-    name:"Having an Escape",
-    value:"Having an Escape"
-  }, 
+    id: "learning_select",
+    label: "Learning New Things",
+    name: "Learning New Things",
+    value: "Learning New Things",
+  },
   {
-    id:"hope_select",
-    label:"Hope",
-    name:"Hope",
-    value:"Hope",
-
-  }
-
-];
-
+    id: "calm_select",
+    label: "Finding Calm",
+    name: "Finding Calm",
+    value: "Finding Calm",
+  },
+  {
+    id: "appreciation_select",
+    label: "Appreciation",
+    name: "Appreciation",
+    value: "Appreciation",
+  },
+  {
+    id: "escape_select",
+    label: "Having an Escape",
+    name: "Having an Escape",
+    value: "Having an Escape",
+  },
+  {
+    id: "hope_select",
+    label: "Hope",
+    name: "Hope",
+    value: "Hope",
+  },
+]
 
 export default function Gallery(props) {
   const [selectedSubmission, setSelectedSubmission] = useState(null)
@@ -91,38 +84,41 @@ export default function Gallery(props) {
     }
   }
 
-  const handleChange = (event) => {
+  const handleChange = event => {
     // updating an object instead of a Map
-    setCheckedItems({ ...checkedItems, [event.target.name]: event.target.checked });
-  // update the state by creating a new Map
-}
+    setCheckedItems({
+      ...checkedItems,
+      [event.target.name]: event.target.checked,
+    })
+    // update the state by creating a new Map
+  }
 
-const resetArchive = (event) => {
-  event.preventDefault();
-  setFilteredItems(photos)
-}
-const handleSubmit=(event) => {
-  event.preventDefault();
-  let filteredPhotos = []
-  let filterItem = ""
-  let filterTrue=false
-  let keys =Object.keys(checkedItems)
-  let values = Object.values(checkedItems)
-  for (let i = 0; i < keys.length; ++i){
-    filterItem= keys[i]
-    filterTrue = values[i]
-      for (let j =0; j <photos.length; ++j) {
+  const resetArchive = event => {
+    event.preventDefault()
+    setFilteredItems(photos)
+  }
+  const handleSubmit = event => {
+    event.preventDefault()
+    let filteredPhotos = []
+    let filterItem = ""
+    let filterTrue = false
+    let keys = Object.keys(checkedItems)
+    let values = Object.values(checkedItems)
+    for (let i = 0; i < keys.length; ++i) {
+      filterItem = keys[i]
+      filterTrue = values[i]
+      for (let j = 0; j < photos.length; ++j) {
         let themes = photos[j].themes
         if (themes.includes(filterItem) && filterTrue) {
           let newItem = photos[j]
           filteredPhotos = filteredPhotos.concat(newItem)
         }
       }
-  }
+    }
 
-  // console.log(filteredPhotos)
-  setFilteredItems(filteredPhotos)
-}
+    // console.log(filteredPhotos)
+    setFilteredItems(filteredPhotos)
+  }
   return (
     <>
       <Nav />
@@ -139,16 +135,26 @@ const handleSubmit=(event) => {
             <p className="title-S">Filter Entries</p>
             <Form onSubmit={handleSubmit}>
               <Form.Group id="filter-entries">
-                {
-                     checkboxes.map(item => (
-                          <Form.Check id = {item.id} key={item.id} label={item.label} value={item.value} name={item.name} checked={checkedItems[item.name]} onChange={handleChange} />
-                     ))
-                }
+                {checkboxes.map(item => (
+                  <Form.Check
+                    id={item.id}
+                    key={item.id}
+                    label={item.label}
+                    value={item.value}
+                    name={item.name}
+                    checked={checkedItems[item.name]}
+                    onChange={handleChange}
+                  />
+                ))}
               </Form.Group>
-              <button type ="submit" className="button">Apply Changes</button>
+              <button type="submit" className="button">
+                Apply Changes
+              </button>
             </Form>
             <Form onSubmit={resetArchive}>
-            <button type ="submit" className="button">Reset Changes</button>
+              <button type="submit" className="button">
+                Reset Changes
+              </button>
             </Form>
           </div>
           <div className="grid">

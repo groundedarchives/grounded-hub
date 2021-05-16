@@ -3,6 +3,15 @@ home.css -- styles to be applied on the home page
 */
 
 /* landing section */
+.background-container {
+  position: relative;
+  height: calc(100vh - 100px);
+}
+
+.landing {
+  position: relative;
+}
+
 .landing-container {
   display: flex;
   justify-content: center;
