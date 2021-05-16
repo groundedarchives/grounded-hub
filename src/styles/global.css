@@ -8,7 +8,7 @@ global.css -- styles to be applies on every page, including resets to CSS preset
 MARK - root styles
 */
 :root {
-  font-size: 16px;
+  font-size: 14px;
   background-color: #f2f8f8;
 }
 

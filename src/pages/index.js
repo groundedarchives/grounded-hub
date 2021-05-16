@@ -45,8 +45,9 @@ export default function Home() {
               <p className="landing-p">
                 The stories of global events are often found in the objects left
                 behind: artifacts in museums, keepsakes passed through families,
-                etc. Recent events have forced many of us to find new meaning in
-                the spaces we inhabit and the objects that surround us.
+                homes that withstood war, famine, or plague. The COVID-19
+                pandemic has forced many of us to find new meaning in the spaces
+                we inhabit and the objects that surround us.
               </p>
             </div>
             <div className="landing-buttons">
@@ -84,7 +85,7 @@ export default function Home() {
       <section className="explore">
         <div className="explore-header">
           <div>
-            <h2 className="title-L">Gallery</h2>
+            <h2 className="title-M">Gallery</h2>
             <p className="gallery-text">
               The Gallery offers an artistic representation of several
               submissions to explore the possibilities of a digital exhibit. See
