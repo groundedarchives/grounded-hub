@@ -31,11 +31,11 @@ MARK - utility styles
 
 @media (min-width: 768px) {
   .title-M {
-    font-size: 3rem;
+    font-size: 48px;
   }
 
   .title-L {
-    font-size: 6rem;
+    font-size: 96px;
   }
 }
 
@@ -129,38 +129,4 @@ fieldset {
 
 body {
   margin: 0px;
-}
-/* .grid-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin-left: 1em;
-  margin-top: 2em;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-} */
-@media (max-width: 767px) {
-  .title-L {
-    font-size: 3rem;
-  }
-  /* .title-S {
-    visibility: collapse;
-  } */
-  /* .grid-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-  } */
-  /* .col-left {
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
-  } */
 }

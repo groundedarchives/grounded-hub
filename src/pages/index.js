@@ -63,12 +63,12 @@ export default function Home() {
             </div>
             <div className="about-paragraph">
               <p>
-                “Grounded: The Pandemic Archive” is our effort to assemble a
-                living archive of the objects that tell stories of home and
-                hardship amid the ongoing battles for health, community, and
-                justice. We invite you to explore the archive and discover how
-                different objects hold a piece of their story and voice to
-                history.
+                “Grounded: The Pandemic Archive” is a living archive of the
+                objects that tell stories of home and hardship amid the crises
+                of health and justice. <br></br> <br></br> We invite you to
+                explore the featured gallery and collective archive to discover
+                objects and spaces that help capture the stories of this
+                historic time.
               </p>
             </div>
             {/* <div className="about-button">
@@ -80,7 +80,7 @@ export default function Home() {
       <section className="explore">
         <div className="explore-header">
           <div>
-            <h2 className="title-M">Gallery</h2>
+            <h2 className="title-L">Gallery</h2>
             <p className="gallery-text">
               The Gallery offers an artistic representation of several
               submissions to explore the possibilities of a digital exhibit. See

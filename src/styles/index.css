@@ -17,7 +17,7 @@ home.css -- styles to be applied on the home page
     position: absolute;
     top: 0;
     width: 100%;
-    max-height: 800px;
+    max-height: 750px;
   }
 }
 @media (min-width: 768px) {
@@ -43,7 +43,15 @@ home.css -- styles to be applied on the home page
   text-transform: uppercase;
   font-weight: 700;
 
+  font-size: 3rem;
+
   margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .landing-h {
+    font-size: 6rem;
+  }
 }
 
 .landing-p {
@@ -80,6 +88,18 @@ home.css -- styles to be applied on the home page
   width: 100%;
 
   height: auto;
+}
+
+@media (min-width: 768px) {
+  .about-header > h2 {
+    line-height: 48px;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .about-right {
+    max-width: 300px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -138,19 +158,14 @@ home.css -- styles to be applied on the home page
   margin-right: 0;
 }
 
-.explore-body .gallery-text {
-  
-}
-
 .image-names {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
-  gap: .75rem;
-  row-gap: .5rem;
+  gap: 0.75rem;
+  row-gap: 0.5rem;
 
   grid-auto-rows: 30px;
-
 
   margin-top: 1.5rem;
   margin-bottom: 4rem;
@@ -207,8 +222,7 @@ home.css -- styles to be applied on the home page
     display: block;
     margin-left: 2rem;
     min-width: 200px;
-    max-width: 350px;
-    font-size: 0.75rem;
+    max-width: 400px;
   }
 
   .explore-body {
