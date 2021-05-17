@@ -25,11 +25,11 @@ export default function Nav() {
       return (
         <>
           <Link className="navItem" to="/gallery">
-            Gallery
+            The Archive
           </Link>
-          <Link className="navItem" to="/visualization">
+          {/* <Link className="navItem" to="/visualization">
             Visualization
-          </Link>
+          </Link> */}
           <Link className="navItem" to="/about">
             About
           </Link>
@@ -68,11 +68,11 @@ export default function Nav() {
                   </Link>
                 </div>
                 <div className="hamburgerItem">
-                  <Link to="/gallery">Gallery</Link>
+                  <Link to="/gallery">The Archive</Link>
                 </div>
-                <div className="hamburgerItem">
+                {/* <div className="hamburgerItem">
                   <Link to="/visualization">Visualization</Link>
-                </div>
+                </div> */}
                 <div className="hamburgerItem">
                   <Link to="/about">About</Link>
                 </div>
