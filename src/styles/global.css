@@ -8,34 +8,35 @@ global.css -- styles to be applies on every page, including resets to CSS preset
 MARK - root styles
 */
 :root {
+  font-family: "DM Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #222;
   background-color: #f2f8f8;
 }
 
 /* 
 MARK - utility styles
 */
+.title-S {
+  font-size: 1.5rem;
+}
 
 .title-M,
 .title-L {
-  /* 1.5 x root font size = 1.5 x 16 = 24px */
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 @media (min-width: 768px) {
   .title-M {
-    /* 3 x root font size = 3 x 16 = 48px */
     font-size: 3rem;
   }
 
   .title-L {
-    /* 6 x root font size = 6 x 16 = 96px */
     font-size: 6rem;
   }
-}
-
-.title-S {
-  font-size: 1.5rem;
 }
 
 section {
@@ -71,9 +72,13 @@ a {
 
 .button,
 button {
+  font-family: "DM Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+
   background-color: transparent;
   color: inherit;
-  border: 1px solid black;
+  border: 2px solid #064457;
   cursor: pointer;
 
   padding: 0.5rem 1rem;
@@ -123,12 +128,6 @@ fieldset {
 }
 
 body {
-  font-family: "DM Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #222;
-
   margin: 0px;
 }
 /* .grid-container {

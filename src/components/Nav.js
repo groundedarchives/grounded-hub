@@ -89,7 +89,7 @@ export default function Nav() {
 
   return (
     <nav style={{ position: "relative", zIndex: "11" }}>
-      <Link className="navItem" to="/">
+      <Link className="logo navItem" to="/">
         Grounded
       </Link>
       <div className="subpages">{mobileOrDesktopNav()}</div>

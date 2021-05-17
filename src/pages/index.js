@@ -28,12 +28,7 @@ export default function Home() {
         <StaticImage
           src="../../static/images/desktop_bg.png"
           layout="fullWidth"
-          style={{
-            position: "absolute",
-            top: "0",
-            width: "100%",
-            maxHeight: 800,
-          }}
+          className="background-image"
           quality="100"
         ></StaticImage>
         <section className="landing">

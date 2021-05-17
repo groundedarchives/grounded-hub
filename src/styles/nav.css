@@ -9,6 +9,12 @@ nav .navItem {
   line-height: 47px;
 }
 
+nav .navItem.logo {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
 .subpages {
   width: fit-content;
 }

@@ -7,6 +7,19 @@ home.css -- styles to be applied on the home page
   position: relative;
 }
 
+.background-image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .background-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-height: 800px;
+  }
+}
 @media (min-width: 768px) {
   .background-container {
     height: calc(100vh - 100px);
@@ -126,16 +139,25 @@ home.css -- styles to be applied on the home page
 }
 
 .explore-body .gallery-text {
-  margin-bottom: 1rem;
+  
 }
 
 .image-names {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  gap: .75rem;
+  row-gap: .5rem;
+
+  grid-auto-rows: 30px;
+
+
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .image-names > p {
-  padding: 0 1rem;
+  text-align: center;
 }
 
 .scroll-container {
