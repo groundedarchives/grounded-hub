@@ -2,10 +2,11 @@ nav {
   display: flex;
   justify-content: space-between;
 
-  padding: 2rem;
+  padding: 3rem 4rem;
 }
 
 nav .navItem {
+  font-size: 18px;
   line-height: 47px;
 }
 
@@ -20,7 +21,7 @@ nav .navItem.logo {
 }
 
 .subpages .navItem {
-  padding-left: 1rem;
+  margin-left: 2rem;
 }
 
 .closeIcon {
