@@ -14,7 +14,7 @@ home.css -- styles to be applied on the home page
 @media (min-width: 768px) {
   .background-image {
     display: block;
-    position: absolute;
+    position: absolute !important;
     top: 0;
     width: 100%;
     max-height: 750px;
