@@ -46,8 +46,8 @@ export default function Home() {
               </p>
             </div>
             <div className="landing-buttons">
-              <button>See gallery</button>
-              <button>Learn More</button>
+              <button className="pageButton">See gallery</button>
+              <button className="pageButton">Learn More</button>
             </div>
           </div>
         </section>
@@ -87,7 +87,7 @@ export default function Home() {
               The Archive to view all stories in their original form.
             </p>
           </div>
-          <Link className="button" to="/gallery">
+          <Link className="pageButton" to="/gallery">
             View the Archive
           </Link>
         </div>

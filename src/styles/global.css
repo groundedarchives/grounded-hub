@@ -70,8 +70,7 @@ a {
   cursor: pointer;
 }
 
-.button,
-button {
+.pageButton {
   font-family: "DM Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
