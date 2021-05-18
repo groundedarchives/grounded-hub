@@ -3,6 +3,7 @@ import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 import ArchiveInfo from "../components/ArchiveInfo"
 import Chip from "@material-ui/core/Chip"
+import CheckIcon from "@material-ui/icons/Check"
 
 import "../styles/gallery.css"
 import { photos } from "../components/Photos"
@@ -144,6 +145,12 @@ export default function Gallery(props) {
             <div className="filters">
               {filterParameters.map((item, i) => (
                 <Chip
+                  className={filters[item.id] ? "selected" : null}
+                  icon={
+                    filters[item.id] ? (
+                      <CheckIcon style={{ color: "F2F8F8" }} />
+                    ) : null
+                  }
                   key={i}
                   onClick={() => handleClick(item)}
                   label={item.label}
