@@ -16,7 +16,18 @@
 }
 
 .filter-col {
-  min-width: 12em;
+  min-width: 18rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.filters > div {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
 }
 
 @media (min-width: 768px) {

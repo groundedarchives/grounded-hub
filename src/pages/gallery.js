@@ -9,17 +9,10 @@ import { photos } from "../components/Photos"
 
 const filterParameters = [
   {
-    id: "HumanConnection",
-    label: "Human Connection",
-    name: "HumanConnection",
-    value: "HumanConnection",
-  },
-
-  {
-    id: "Perseverance",
-    label: "Perseverance",
-    name: "Perseverance",
-    value: "Perseverance",
+    id: "Appreciation",
+    label: "Appreciation",
+    name: "Appreciation",
+    value: "Appreciation",
   },
   {
     id: "FeelingGrounded",
@@ -28,16 +21,23 @@ const filterParameters = [
     value: "FeelingGrounded",
   },
   {
+    id: "Perseverance",
+    label: "Perseverance",
+    name: "Perseverance",
+    value: "Perseverance",
+  },
+
+  {
+    id: "HumanConnection",
+    label: "Human Connection",
+    name: "HumanConnection",
+    value: "HumanConnection",
+  },
+  {
     id: "HouseholdItems",
     label: "Household Items",
     name: "HouseholdItems",
     value: "HouseholdItems",
-  },
-  {
-    id: "Appreciation",
-    label: "Appreciation",
-    name: "Appreciation",
-    value: "Appreciation",
   },
 ]
 
@@ -141,13 +141,15 @@ export default function Gallery(props) {
         <div className="grid-container">
           <div className="filter-col">
             <p className="title-S">Filter Entries</p>
-            {filterParameters.map((item, i) => (
-              <Chip
-                key={i}
-                onClick={() => handleClick(item)}
-                label={item.label}
-              ></Chip>
-            ))}
+            <div className="filters">
+              {filterParameters.map((item, i) => (
+                <Chip
+                  key={i}
+                  onClick={() => handleClick(item)}
+                  label={item.label}
+                ></Chip>
+              ))}
+            </div>
           </div>
           <div className="grid">
             {displayedPhotos.map((image, i) => (
