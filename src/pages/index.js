@@ -8,7 +8,7 @@ import GalleryItem from "../components/GalleryItem"
 
 import "../styles/global.css"
 import "../styles/index.css"
-import WashUImage from "../../static/images/WashU.png"
+import WashUImage from "../../static/images/washU.png"
 import HomeOffice from "../../static/images/office_home.jpg"
 import Scrabble from "../../static/images/scrabble.jpg"
 import Plant from "../../static/images/plant_vase.jpg"
