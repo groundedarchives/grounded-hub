@@ -58,7 +58,7 @@ export const imageQuery = graphql`
             gatsbyImageData(
               layout: CONSTRAINED
               placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
+              formats: [AUTO, WEBP]
             )
           }
         }
@@ -68,7 +68,6 @@ export const imageQuery = graphql`
 `
 
 export default function Gallery({ data }) {
-
   const gatherImages = () => {
     const imageData = data.allFile.edges.map((item, i) => {
       return {
