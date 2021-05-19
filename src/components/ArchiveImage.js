@@ -1,5 +1,4 @@
 import React, { useState, memo } from "react"
-import Skeleton from "react-loading-skeleton"
 
 import "../styles/global.css"
 import "../styles/index.css"
