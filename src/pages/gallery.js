@@ -206,6 +206,8 @@ export default function Gallery({ data }) {
                       onClick={() => toggleImageDetails(i)}
                     />
                   }
+                  toggleInfo={toggleImageDetails}
+                  arrayIndex={i}
                   imageData={image}
                   willShowInfo={i === selectedSubmission}
                 />
