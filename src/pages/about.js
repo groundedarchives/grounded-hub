@@ -3,7 +3,7 @@ import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 import "../styles/global.css"
 import "../styles/about.css"
-import WashUImage from "../../static/images/WashU.png"
+import WashUImage from "../../static/images/washU.png"
 
 export default function About() {
   // put HTML within these brackets
@@ -50,18 +50,20 @@ export default function About() {
             illuminate new paths toward social justice.
           </div>
           <div className="body-text-bottom">
-            <p>Without documentation, these crucial—but ephemeral—stories where art
-            intersects with lived experiences of pandemic and political
-            resistance will likely be lost. Black and Brown voices are often
-            eliminated from dominant narratives due to exclusionary revisions of
-            the past. We are working to construct an inclusive legacy and
-            collective memory of these historic times and center communities'
-            stories through our future work with Grounded: The Pandemic Archive.
-            Recognizing and understanding experiences of the pandemic will
-            remain vital for years to come as we slowly process and seek to
-            remedy the structural inequalities underscored by COVID-19. If you
-            are interested in participating or getting involved, please contact
-            us.</p>
+            <p>
+              Without documentation, these crucial—but ephemeral—stories where
+              art intersects with lived experiences of pandemic and political
+              resistance will likely be lost. Black and Brown voices are often
+              eliminated from dominant narratives due to exclusionary revisions
+              of the past. We are working to construct an inclusive legacy and
+              collective memory of these historic times and center communities'
+              stories through our future work with Grounded: The Pandemic
+              Archive. Recognizing and understanding experiences of the pandemic
+              will remain vital for years to come as we slowly process and seek
+              to remedy the structural inequalities underscored by COVID-19. If
+              you are interested in participating or getting involved, please
+              contact us.
+            </p>
           </div>
         </div>
       </section>

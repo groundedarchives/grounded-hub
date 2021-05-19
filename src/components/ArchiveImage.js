@@ -10,9 +10,7 @@ const areEqual = (prevProps, nextProps) => {
 // convert to Gatsby <Img/>
 // https://engineering.belchior.me/creating-a-custom-photo-gallery-using-gatsbyjs-and-css-grid-ck8ghm0vn01vkz3s1ulux9v17
 
-const ArchiveImage = memo(({ image, toggleInfo, arrayIndex }) => {
-  const [isLoaded, setIsLoaded] = useState(false)
-
+const ArchiveImage = memo(({ image }) => {
   return <div>{image}</div>
 }, areEqual)
 
