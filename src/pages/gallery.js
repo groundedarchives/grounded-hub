@@ -75,9 +75,6 @@ export default function Gallery({ data }) {
         ...photos[i],
       }
     })
-
-    console.log({ imageData })
-
     return imageData
   }
 
@@ -87,12 +84,12 @@ export default function Gallery({ data }) {
   const [allPhotos, setAllPhotos] = useState(gatherImages())
 
   const toggleImageDetails = arrayIndex => {
-    if (selectedSubmission !== null) {
-      setSelectedSubmission(null)
+    if (arrayIndex === selectedSubmission) {
+      setSelectedSubmission(-1)
       return
-    } else {
-      setSelectedSubmission(arrayIndex)
     }
+
+    setSelectedSubmission(arrayIndex)
   }
 
   const handleClick = item => {

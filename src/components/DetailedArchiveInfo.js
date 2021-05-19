@@ -11,8 +11,8 @@ export default function DetailedArchiveInfo({ imageData, toggleInfo }) {
 
   useEffect(() => {
     setTimeout(() => {
-      imageInfo.current.scrollIntoView({ behavior: "smooth" })
-    }, 100)
+      imageInfo.current.scrollIntoView({ behavior: "smooth", block: "center" })
+    }, 50)
   }, [])
 
   return (
@@ -35,7 +35,9 @@ export default function DetailedArchiveInfo({ imageData, toggleInfo }) {
                 defaultDuration=""
               ></AudioPlayer>
               <h2 className="transcriptSubtitle">Audio Transcription</h2>
-              <p>{imageData.transcript}</p>
+              <p style={{ maxHeight: 400, overflowY: "scroll" }}>
+                {imageData.transcript}
+              </p>
             </>
           ) : (
             <>
