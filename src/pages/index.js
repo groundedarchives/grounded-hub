@@ -26,7 +26,8 @@ export default function Home() {
       <div className="background-container">
         <Nav />
         <StaticImage
-          src="../../static/images/desktop_bg.png"
+          alt="background image with many photographs of submitted items in a grid"
+          src="../../static/desktop_bg.png"
           layout="fullWidth"
           className="background-image"
           quality="100"

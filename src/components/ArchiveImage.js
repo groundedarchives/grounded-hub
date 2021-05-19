@@ -1,4 +1,6 @@
 import React, { useState, memo } from "react"
+import Skeleton from "react-loading-skeleton"
+
 import "../styles/global.css"
 import "../styles/index.css"
 
@@ -12,15 +14,7 @@ const areEqual = (prevProps, nextProps) => {
 const ArchiveImage = memo(({ image, toggleInfo, arrayIndex }) => {
   const [isLoaded, setIsLoaded] = useState(false)
 
-  return (
-    <img
-      className="gridImage"
-      style={isLoaded ? {} : { display: "none" }}
-      src={image.src}
-      onClick={() => toggleInfo(arrayIndex)}
-      onLoad={() => setIsLoaded(true)}
-    ></img>
-  )
+  return <div>{image}</div>
 }, areEqual)
 
 export default ArchiveImage

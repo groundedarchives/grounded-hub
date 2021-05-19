@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react"
 import AudioPlayer from "react-h5-audio-player"
 import "react-h5-audio-player/lib/styles.css"
 
-export default function DetailedArchiveInfo({ image, toggleInfo }) {
+export default function DetailedArchiveInfo({ imageData, toggleInfo }) {
   const imageInfo = useRef(null)
 
   const handleClose = () => {
@@ -22,25 +22,25 @@ export default function DetailedArchiveInfo({ image, toggleInfo }) {
       </div>
       <div className="body">
         <div>
-          <img className="imageThumbnail" src={image.src} alt="" />
+          <img className="imageThumbnail" src={imageData.src} alt="" />
         </div>
         <div className="imageInfo">
-          {image.audioSource !== "" ? (
+          {imageData.audioSource !== "" ? (
             <>
               <AudioPlayer
-                src={image.audioSource}
+                src={imageData.audioSource}
                 customAdditionalControls={[]}
                 customVolumeControls={[]}
                 defaultCurrentTime=""
                 defaultDuration=""
               ></AudioPlayer>
               <h2 className="transcriptSubtitle">Audio Transcription</h2>
-              <p>{image.transcript}</p>
+              <p>{imageData.transcript}</p>
             </>
           ) : (
             <>
               <h2 className="transcriptSubtitle">Audio not found</h2>
-              <p>{image.transcript}</p>
+              <p>{imageData.transcript}</p>
             </>
           )}
         </div>

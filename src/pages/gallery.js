@@ -1,4 +1,7 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import { graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 import ArchiveInfo from "../components/ArchiveInfo"
@@ -42,11 +45,44 @@ const filterParameters = [
   },
 ]
 
-export default function Gallery(props) {
+export const imageQuery = graphql`
+  query {
+    allFile(
+      filter: { sourceInstanceName: { eq: "images" } }
+      sort: { fields: [name], order: ASC }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            gatsbyImageData(
+              layout: CONSTRAINED
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
+      }
+    }
+  }
+`
+
+export default function Gallery({ data }) {
+  const gatherImages = () => {
+    const imageData = data.allFile.edges.map((item, i) => {
+      return {
+        ...item.node,
+        ...photos[i],
+      }
+    })
+
+    return imageData
+  }
+
   const [selectedSubmission, setSelectedSubmission] = useState(null)
   const [filters, setFilters] = useState({})
-  const [displayedPhotos, setDisplayedPhotos] = useState(photos)
-  const [allPhotos, setAllPhotos] = useState(photos)
+  const [displayedPhotos, setDisplayedPhotos] = useState(gatherImages())
+  const [allPhotos, setAllPhotos] = useState(gatherImages())
 
   const toggleImageDetails = arrayIndex => {
     if (selectedSubmission !== null) {
@@ -159,17 +195,24 @@ export default function Gallery(props) {
             </div>
           </div>
           <div className="grid">
-            {displayedPhotos.map((image, i) => (
-              <ArchiveInfo
-                key={i}
-                image={image}
-                arrayIndex={i}
-                toggleInfo={toggleImageDetails}
-                willShowInfo={i === selectedSubmission}
-              />
+            {displayedPhotos.map((image, i) => {
+              const imageSrc = getImage(image)
+              return (
+                <ArchiveInfo
+                  key={i}
+                  image={
+                    <GatsbyImage
+                      image={imageSrc}
+                      onClick={() => toggleImageDetails(i)}
+                    />
+                  }
+                  imageData={image}
+                  willShowInfo={i === selectedSubmission}
+                />
+              )
               // for each filter in filter list
               // if filter is in image themes list, render it
-            ))}
+            })}
           </div>
         </div>
       </section>
