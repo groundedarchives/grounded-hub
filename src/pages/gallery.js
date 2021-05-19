@@ -76,6 +76,8 @@ export default function Gallery({ data }) {
       }
     })
 
+    console.log({ imageData })
+
     return imageData
   }
 
