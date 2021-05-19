@@ -68,6 +68,7 @@ export const imageQuery = graphql`
 `
 
 export default function Gallery({ data }) {
+
   const gatherImages = () => {
     const imageData = data.allFile.edges.map((item, i) => {
       return {
@@ -114,10 +115,10 @@ export default function Gallery({ data }) {
 
     for (const photo of allPhotos) {
       for (const filter in filters) {
-        const isToggled = filters[filter]
+        const filterIsToggled = filters[filter]
         const photoHasFilterProperty = photo.themes[filter]
 
-        if (isToggled && photoHasFilterProperty) {
+        if (filterIsToggled && photoHasFilterProperty) {
           newDisplayedPhotos.push(photo)
           break
         }
@@ -210,8 +211,6 @@ export default function Gallery({ data }) {
                   willShowInfo={i === selectedSubmission}
                 />
               )
-              // for each filter in filter list
-              // if filter is in image themes list, render it
             })}
           </div>
         </div>

@@ -15,8 +15,8 @@ export const photos = [
     textSubmission: true,
   },
   {
-    src: "images/ballgame.png",
-    thumbnail: "images/ballgame.png",
+    src: "images/ballgame.jpg",
+    thumbnail: "images/ballgame.jpg",
     audioSource: "",
     themes: {},
     transcript: "",
@@ -65,8 +65,8 @@ export const photos = [
   },
   {
     title: "Harry Potter book",
-    src: "images/harry_potter_book.png",
-    thumbnail: "images/harry_potter_book.png",
+    src: "images/harry_potter_book.jpg",
+    thumbnail: "images/harry_potter_book.jpg",
     audioSource: "Audio/harry_potter_book.mp3",
     transcript:
       "While choosing Harry Potter 7 as my artifact is sort of a basic response to this prompt. Reading *Harry Potter and the Deathly Hallows* was a really meaningful experience to me over quarantine and since the time the pandemic began. I actually didn't enter the Harry Potter game until a little bit later in my life. And by the time I entered high school, I was reading the fifth, and my mom just thought I was too old to be reading it, so I moved onto kind of more adult books at that time, and then came college, I still hadn't read the sixth or seventh book, which is crazy. And finally in quarantine, I really had a time to sit down and read. I didn't have anything else to do really, so it was my first time reading it. And although I wish I read *Harry Potter and the Deathly Hallows* when I was younger, I absolutely loved reading it at age 21. And during such a stagnant time in the world, I felt like a kid again in my childhood house rather than this like 21 year old transplant at home. I was totally engrossed with the book. And just super absorbed. Staying up until 3am reading not knowing where the time went - what a wonderful experience that I haven't had in a really long time. It just like brought me a lot of happiness and most importantly, it was just like this amazing escape. You know reading that book and turning the pages, not knowing the time, not knowing where I was in the story - just fully living in this other world and universe and escaping the one we are currently in. So, it just - I hadn't felt like that in a while, and I think it meant more to me than ever because in a time where there's so much turmoil in the world, it felt really refreshing to sort of exit it for a moment. And just to have that outlet that was fun and creative and magical. I think in the end because it was so special and so fun, and I loved the book so much, that it allowed me to appreciate this downtime that we have. And I'm privileged in saying that because I know how difficult this has been for so many people on a way more intense scale than it has been for me. But I think in sitting and reflecting and relaxing and having a moment to breathe, and just pick up Harry Potter 7 and tear through it and have fun - I felt very appreciative of that bonus time.",
@@ -83,8 +83,8 @@ export const photos = [
   },
   {
     title: "Lanyard",
-    src: "images/lanyard.png",
-    thumbnail: "images/lanyard.png",
+    src: "images/lanyard.webp",
+    thumbnail: "images/lanyard.webp",
     audioSource: "Audio/lanyard.mp3",
     transcript:
       "This item is the lanyard of my work badge. This item has gained importance to me during the pandemic because it taught me to be thankful that I have a job when so many others are in need and do not have a job.",
@@ -93,8 +93,8 @@ export const photos = [
   },
 
   {
-    src: "images/laptop.png",
-    thumbnail: "images/laptop.png",
+    src: "images/laptop.jpg",
+    thumbnail: "images/laptop.jpg",
     audioSource: "",
     themes: {},
     transcript: "",
@@ -148,7 +148,7 @@ export const photos = [
   },
   {
     src: "images/orange.jpg",
-    thumbnail: "images/mobile_bg.jpg",
+    thumbnail: "images/orange.jpg",
     audioSource: "",
     themes: {},
     transcript: "",
@@ -179,8 +179,8 @@ export const photos = [
   },
   {
     title: "Recipes",
-    src: "images/phone.png",
-    thumbnail: "images/phone.png",
+    src: "images/phone.webp",
+    thumbnail: "images/phone.webp",
     thumbnailWidth: 251.9,
     thumbnailHeight: 256.2,
     audioSource: "audioStory/rszf-508l.mp3",
@@ -203,8 +203,8 @@ export const photos = [
   },
   {
     title: "Punching bag",
-    src: "images/punching_bag.png",
-    thumbnail: "images/punching_bag.png",
+    src: "images/punching_bag.jpg",
+    thumbnail: "images/punching_bag.jpg",
     thumbnailWidth: 302.4,
     thumbnailHeight: 403.2,
     audioSource: "Audio/punching_bag.mp3",
@@ -226,8 +226,8 @@ export const photos = [
   },
   {
     title: "Sanitizer",
-    src: "images/sanitizer.png",
-    thumbnail: "images/sanitizer.png",
+    src: "images/sanitizer.webp",
+    thumbnail: "images/sanitizer.webp",
     thumbnailWidth: 247.4,
     thumbnailHeight: 338.1,
     audioSource: "Audio/sanitizer.mp3",
@@ -289,8 +289,8 @@ export const photos = [
   },
   {
     title: "Air Plant",
-    src: "images/spiky_plant.png",
-    thumbnail: "images/spiky_plant.png",
+    src: "images/spiky_plant.webp",
+    thumbnail: "images/spiky_plant.webp",
     thumbnailWidth: 302.4,
     thumbnailHeight: 290.4,
     audioSource: "Audio/spiky_plant.mp3",
@@ -301,8 +301,8 @@ export const photos = [
   },
   {
     title: "Spongebob Cup",
-    src: "images/spongebob.png",
-    thumbnail: "images/spongebob.png",
+    src: "images/spongebob.webp",
+    thumbnail: "images/spongebob.webp",
     thumbnailWidth: 285.8,
     thumbnailHeight: 492.2,
     audioSource: "Audio/spongebob.mp3",
@@ -330,8 +330,8 @@ export const photos = [
   },
   {
     title: "Transit Card",
-    src: "images/transit_card.png",
-    thumbnail: "images/transit_card.png",
+    src: "images/transit_card.webp",
+    thumbnail: "images/transit_card.webp",
     thumbnailWidth: 403.2,
     thumbnailHeight: 249,
     audioSource: "Audio/transit_card.mp3",
@@ -387,8 +387,8 @@ export const photos = [
   },
   {
     title: "Watch",
-    src: "images/watch.png",
-    thumbnail: "images/watch.png",
+    src: "images/watch.webp",
+    thumbnail: "images/watch.webp",
     thumbnailWidth: 374.7,
     thumbnailHeight: 277.95,
     audioSource: "",
@@ -398,8 +398,8 @@ export const photos = [
   },
   {
     title: "Waterbottle",
-    src: "images/waterbottle.png",
-    thumbnail: "images/waterbottle.png",
+    src: "images/waterbottle.webp",
+    thumbnail: "images/waterbottle.webp",
     thumbnailWidth: 339.15,
     thumbnailHeight: 521.7,
     audioSource: "",
@@ -433,8 +433,8 @@ export const photos = [
   },
   {
     title: "Yarn",
-    src: "images/yarn.png",
-    thumbnail: "images/yarn.png",
+    src: "images/yarn.jpg",
+    thumbnail: "images/yarn.jpg",
     thumbnailWidth: 302.4,
     thumbnailHeight: 302.4,
     audioSource: "audioStory/thread.mp3",
