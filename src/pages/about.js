@@ -25,7 +25,7 @@ export default function About() {
         </div>
         <div className="body-container">
           <div className="body-header">
-            <h1 className="title-L">Our Story</h1>
+            <h1 className="subheader">Our Story</h1>
           </div>
           <div className="body-picture">
             <img src={WashUImage} class="responsive"></img>
