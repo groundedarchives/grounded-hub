@@ -2886,7 +2886,7 @@ babel-plugin-transform-react-remove-prop-types@^0.4.24:
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.24.tgz#f2edaf9b4c6a5fbe5c1d678bfb531078c1555f3a"
   integrity sha512-eqj0hVcJUR57/Ug2zE1Yswsw4LhuqqHhD+8v120T1cl3kjg76QwtyBrdIk4WVwK+lAhBJVYCd/v+4nc4y+8JsA==
 
-babel-preset-gatsby@^1.5.0:
+babel-preset-gatsby@^1.0.0, babel-preset-gatsby@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-1.5.0.tgz#f1da38a3b8b705ad03a1cb6279315e8730c3be8a"
   integrity sha512-XV66eQQhfTgx0V3KtIo2fSZYUpL9zXa8jO91kApYHOAqZa9vuMC1leo0X5CQQofeyaJTHIlrGnRcAhH//qADHQ==
@@ -3532,6 +3532,13 @@ classnames@*, classnames@^2.2.6:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
   integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
+clean-css@^5.1.1:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-5.1.2.tgz#6ea0da7286b4ddc2469a1b776e2461a5007eed54"
+  integrity sha512-QcaGg9OuMo+0Ds933yLOY+gHPWbxhxqF0HDexmToPf8pczvmvZGYzd+QqWp9/mkucAOKViI+dSFOqoZIvXbeBw==
+  dependencies:
+    source-map "~0.6.0"
 
 clean-stack@^2.0.0:
   version "2.2.0"
@@ -5946,6 +5953,16 @@ gatsby-plugin-image@^1.5.0:
     gatsby-core-utils "^2.5.0"
     objectFitPolyfill "^2.3.0"
     prop-types "^15.7.2"
+
+gatsby-plugin-material-ui@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-material-ui/-/gatsby-plugin-material-ui-3.0.1.tgz#eed9eb22a045ead1d0aa2f697f8fadd834891f27"
+  integrity sha512-HuIjm9MuE5wRiHK/MBrUMeNpSs3Gh8V9cKnt8wWKlyDKUoKcn6tQSqn5T8V8IADA4OFTo3Lq2gexOCbaulHUdg==
+  dependencies:
+    autoprefixer "^10.2.4"
+    babel-preset-gatsby "^1.0.0"
+    clean-css "^5.1.1"
+    postcss "^8.0.5"
 
 gatsby-plugin-page-creator@^3.5.0:
   version "3.5.0"
@@ -10097,7 +10114,7 @@ postcss@8.2.6:
     nanoid "^3.1.20"
     source-map "^0.6.1"
 
-postcss@^8.2.10, postcss@^8.2.9:
+postcss@^8.0.5, postcss@^8.2.10, postcss@^8.2.9:
   version "8.2.15"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.15.tgz#9e66ccf07292817d226fc315cbbf9bc148fbca65"
   integrity sha512-2zO3b26eJD/8rb106Qu2o7Qgg52ND5HPjcyQiK2B98O388h43A448LCslC0dI2P97wCAQRJsFvwTRcXxTKds+Q==
@@ -11537,7 +11554,7 @@ source-map@^0.5.0, source-map@^0.5.6:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
 
-source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.1:
+source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.0, source-map@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==

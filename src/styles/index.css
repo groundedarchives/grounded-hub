@@ -180,10 +180,21 @@ home.css -- styles to be applied on the home page
   overflow: scroll;
 }
 
+.scroll-container .gatsby-image-wrapper {
+  width: 300px;
+}
+
 .scroll-container > div {
+  padding-bottom: 4rem;
   margin-right: 2rem;
   text-align: center;
   width: 100%;
+}
+
+.scroll-container > div > .gallery-image-title {
+  margin-top: 1rem;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .scroll-container > div > img {

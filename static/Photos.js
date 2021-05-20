@@ -16,6 +16,7 @@ export const photos = [
     duration: null,
   },
   {
+    title: "Ballgame",
     src: "images/ballgame.jpg",
     thumbnail: "images/ballgame.jpg",
     audioSource: "",
@@ -25,6 +26,7 @@ export const photos = [
     duration: "0",
   },
   {
+    title: "Bathroom",
     src: "images/bathroom.jpg",
     thumbnail: "images/bathroom.jpg",
     audioSource: "",
@@ -34,8 +36,9 @@ export const photos = [
     duration: "0",
   },
   {
-    src: "images/workout_machines.jpg",
-    thumbnail: "images/workout_machines.jpg",
+    title: "Bicycle",
+    src: "images/bicycle.png",
+    thumbnail: "images/bicycle.png",
     thumbnailWidth: 196,
     thumbnailHeight: 403.2,
     audioSource: "Audio/stationary_bike.mp3",
@@ -46,6 +49,7 @@ export const photos = [
     duration: "03:16",
   },
   {
+    title: "Birthday",
     src: "images/birthday.png",
     thumbnail: "images/birthday.png",
     audioSource: "",
@@ -77,6 +81,7 @@ export const photos = [
     duration: "02:43",
   },
   {
+    title: "Lanterns",
     src: "images/lanterns.jpg",
     thumbnail: "images/lanterns.jpg",
     audioSource: "",
@@ -98,6 +103,7 @@ export const photos = [
   },
 
   {
+    title: "Laptop",
     src: "images/laptop.jpg",
     thumbnail: "images/laptop.jpg",
     audioSource: "",
@@ -108,6 +114,7 @@ export const photos = [
   },
 
   {
+    title: "Library",
     src: "images/library.jpg",
     thumbnail: "images/library.jpg",
     audioSource: "",
@@ -117,6 +124,7 @@ export const photos = [
     duration: "0",
   },
   {
+    title: "Lime Glass",
     src: "images/lime_glass.png",
     thumbnail: "images/lime_glass.png",
     audioSource: "",
@@ -126,6 +134,7 @@ export const photos = [
     duration: "0",
   },
   {
+    title: "Tractor",
     src: "images/machinery.jpg",
     thumbnail: "images/machinery.jpg",
     audioSource: "",
@@ -158,17 +167,7 @@ export const photos = [
     duration: "11:24",
   },
   {
-    src: "images/orange.jpg",
-    thumbnail: "images/orange.jpg",
-    audioSource: "",
-    themes: {},
-    transcript: "",
-    textSubmission: false,
-    duration: "0",
-  },
-
-  {
-    title: "Pebble",
+    title: "River Pebble",
     src: "images/pebble.png",
     thumbnail: "images/pebble.png",
     thumbnailWidth: 345.9,
@@ -181,6 +180,7 @@ export const photos = [
     duration: "02:46",
   },
   {
+    title: "Pet rat",
     src: "images/pet_rat.jpg",
     thumbnail: "images/pet_rat.jpg",
     thumbnailWidth: 320,
@@ -205,7 +205,7 @@ export const photos = [
     duration: "04:31",
   },
   {
-    title: "Plant Vase",
+    title: "Potted Plant",
     src: "images/plant_vase.jpg",
     thumbnail: "images/plant_vase.jpg",
     thumbnailWidth: 302.4,

@@ -9,7 +9,7 @@ import Chip from "@material-ui/core/Chip"
 import CheckIcon from "@material-ui/icons/Check"
 
 import "../styles/gallery.css"
-import { photos } from "../components/Photos"
+import { photos } from "../../static/Photos"
 
 const filterParameters = [
   {
