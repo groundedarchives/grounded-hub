@@ -96,18 +96,6 @@
   padding: 2rem;
 }
 
-@keyframes rollout {
-  0% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.roll-out {
-  animation: rollout 1s;
-}
-
 .imageInfo .transcriptSubtitle {
   font-weight: 700;
 }
@@ -116,7 +104,9 @@
   background-color: unset;
   box-shadow: none;
 
+  margin-top: 2rem;
   margin-bottom: 2rem;
+  padding: 0px;
 }
 
 .rhap_progress-container {
@@ -136,20 +126,31 @@
   background-color: #000;
 }
 
+.rhap_controls-section {
+  flex: none;
+}
+
 .rhap_main-controls-button {
   color: #000;
+}
+
+.rhap_play-pause-button {
+  width: initial;
+  height: initial;
+  font-size: initial;
 }
 
 .imageThumbnail {
   width: 100%;
 
-  max-width: 200px;
+  max-width: 650px;
   height: auto;
 }
 
 @media (min-width: 768px) {
   .body {
     display: flex;
+    align-items: flex-start;
   }
 
   .header {
