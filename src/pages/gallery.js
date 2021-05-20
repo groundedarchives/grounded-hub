@@ -203,7 +203,7 @@ export default function Gallery({ data }) {
                     <GatsbyImage
                       alt={image.title}
                       image={imageSrc}
-                      imgStyle={{mixBlendMode: "multiply"}}
+                      imgStyle={{ mixBlendMode: "multiply" }}
                       onClick={() => toggleImageDetails(i)}
                     />
                   }

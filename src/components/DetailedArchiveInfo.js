@@ -5,7 +5,7 @@ import CloseIcon from "@material-ui/icons/Close"
 import AudioPlayer from "react-h5-audio-player"
 import "react-h5-audio-player/lib/styles.css"
 
-export default function DetailedArchiveInfo({ imageData, toggleInfo }) {
+export default function DetailedArchiveInfo({ image, imageData, toggleInfo }) {
   const imageInfo = useRef(null)
 
   const handleClose = () => {
@@ -68,9 +68,7 @@ export default function DetailedArchiveInfo({ imageData, toggleInfo }) {
         <CloseIcon onClick={handleClose} fontSize="large" />
       </div>
       <div className="body">
-        <div>
-          <img className="imageThumbnail" src={imageData.src} alt="" />
-        </div>
+        <div className="imageThumbnail">{image}</div>
         <div className="imageInfo">{displayImageContent()}</div>
       </div>
     </div>
