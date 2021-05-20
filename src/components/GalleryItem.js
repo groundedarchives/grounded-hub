@@ -33,12 +33,21 @@ export default class GalleryItem extends React.Component {
         />
 
         <Popup
+          className="galleryPopup"
           trigger={
             <button className="pageButton"> See Full Transcription</button>
           }
           modal
         >
-          <div>{this.props.transcription}</div>
+          {close => (
+            <>
+              <button className="pageButton closeButton" onClick={close}>
+                close
+              </button>
+              <h2 className="gallery-image-title">{this.props.title}</h2>
+              <div>{this.props.transcription}</div>
+            </>
+          )}
         </Popup>
       </div>
     )
