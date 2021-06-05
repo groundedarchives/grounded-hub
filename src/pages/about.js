@@ -27,9 +27,7 @@ export default function About() {
           <div className="body-header">
             <h1 className="title-L">Our Story</h1>
           </div>
-          <div className="body-picture">
-            <img src={WashUImage} class="responsive"></img>
-          </div>
+         
           <div className="body-text-top">
             At the end of 2020, we received a grant from the Mellon Foundation
             to build this project out from 2021 through 2024. We are working to

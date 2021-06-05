@@ -6,12 +6,7 @@
 }
 .body-header {
     display: flex;
-    justify-content: center;
-}
-.body-picture {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2rem;
+    justify-content: left;
 }
 .body-text-top {
     display: flex;
