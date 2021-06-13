@@ -8,7 +8,8 @@ import GalleryItem from "../components/GalleryItem"
 
 import "../styles/global.css"
 import "../styles/index.css"
-import WashUImage from "../../static/images/washU.png"
+import introVideo from "../../static/Video/Grounded.mp4"
+import introThumb from "../../static/Video/Grounded_thumb.png"
 
 export default function Home() {
   return (
@@ -46,7 +47,9 @@ export default function Home() {
       <section className="about">
         <div className="about-container">
           <div className="about-left">
-            <img src={WashUImage} className="responsive"></img>
+            <video poster={introThumb} className="responsive" controls>
+              <source src={introVideo} type="video/mp4" />
+            </video>
           </div>
           <div className="about-right">
             <div className="about-header">

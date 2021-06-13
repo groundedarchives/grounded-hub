@@ -76,6 +76,7 @@ export default function Gallery({ data }) {
       }
     })
 
+    // TODO - fix sorting order for text only submissions
     imageData.sort((a, b) => {
       const aValue = a.audioSource === "" ? Infinity : 0
       const bValue = b.audioSource === "" ? Infinity : 0
