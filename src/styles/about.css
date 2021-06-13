@@ -3,6 +3,10 @@
   margin-bottom: 6rem;
 }
 
+.header-container > p {
+  max-width: 600px;
+}
+
 .body-container {
   display: flex;
   align-items: flex-start;
