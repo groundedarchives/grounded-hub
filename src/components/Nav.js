@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import SlideOut from "@ijsto/react-slideout"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
@@ -9,6 +9,7 @@ import "../styles/nav.css"
 
 export default function Nav() {
   const [slideOutIsOpen, setSlideOutIsOpen] = useState(false)
+  const [isClient, setClient] = useState(false)
   const isDesktop = useMediaQuery("(min-width:768px)")
 
   const openSlideOut = () => {
@@ -19,8 +20,12 @@ export default function Nav() {
     setSlideOutIsOpen(false)
   }
 
+  useEffect(() => {
+    setClient(true)
+  }, [])
+
   const mobileOrDesktopNav = () => {
-    if (isDesktop === null) return null
+    if (!isClient) return null
     if (isDesktop) {
       return (
         <>

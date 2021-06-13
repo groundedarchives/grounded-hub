@@ -13,6 +13,7 @@ const ArchiveInfo = memo(
           <ArchiveImage image={image}></ArchiveImage>
 
           <DetailedArchiveInfo
+            image={image}
             imageData={imageData}
             toggleInfo={toggleInfo}
           ></DetailedArchiveInfo>

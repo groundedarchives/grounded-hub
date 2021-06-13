@@ -75,6 +75,15 @@ export default function Gallery({ data }) {
         ...photos[i],
       }
     })
+
+    imageData.sort((a, b) => {
+      const aValue = a.audioSource === "" ? Infinity : 0
+      const bValue = b.audioSource === "" ? Infinity : 0
+
+      if (aValue < bValue) return -1
+      else return 1
+    })
+
     return imageData
   }
 
@@ -203,7 +212,7 @@ export default function Gallery({ data }) {
                     <GatsbyImage
                       alt={image.title}
                       image={imageSrc}
-                      imgStyle={{mixBlendMode: "multiply"}}
+                      imgStyle={{ mixBlendMode: "multiply" }}
                       onClick={() => toggleImageDetails(i)}
                     />
                   }

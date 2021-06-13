@@ -96,8 +96,8 @@ export default function Home() {
             <p>Candle Set</p>
             <p>River Pebble</p>
             <p>Punching Bag</p>
-            <p>Subway Pass</p>
-            <p>Scrapbook</p>
+            <p>Metro Pass</p>
+            <p>Journal Collage</p>
           </div>
           <div className="scroll-container">
             <GalleryItem
@@ -185,7 +185,7 @@ export default function Home() {
               transcription="So the object that I chose to talk about is the punching bag that hangs in my basement in my childhood home. And, I never really paid attention to it until I found myself quarantined in the basement and dealing with a lot of negative emotions after coming back from being abroad and feeling frustrated, uncertain, lonely, and wondering why all this was happening. So, one day, on a whim, I decided to try hitting the punching bag. I was really bad at it at first, but eventually, as I kept going, I was able to put more and more power into my punches and channel all of my negative sentiments into this physical outlet. Hitting the punching bag became a part of my weekly routine and it became a cathartic way for me to kind of reset for my week and remind myself that there are things that I can control— little things I can do, including, staying in touch and controlling my attitude and my emotions."
             ></GalleryItem>
             <GalleryItem
-              title={"Subway Pass"}
+              title={"Metro Pass"}
               image={
                 <StaticImage
                   src={
@@ -198,7 +198,7 @@ export default function Home() {
               transcription="June 2020 was the first month in over four years that I haven't auto-renewed my unlimited ride New York City metro pass. Riding the subways was a big part of my experience living in New York City. I'd ride multiple times a day. I relied on the ease and convenience so much that I never even considered not paying for an unlimited pass. But in early May, my employer told us that we should expect to work remotely and won't be able to return to our office in downtown Manhattan until 2021. I finally had to cancel my Metro pass. And I have no idea when I'll start commuting and using the subway again for it to make sense for you to get another."
             ></GalleryItem>
             <GalleryItem
-              title={"Scrapbook"}
+              title={"Journal Collage"}
               image={
                 <StaticImage
                   src={"../../static/Illustrations/Scrapbook Illustration.png"}

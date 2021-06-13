@@ -18,14 +18,13 @@ export default function About() {
             Louis undergraduate and medical students created Grounded: The
             Pandemic Archive. This digital time capsule, which combines images
             and audio recordings, serves as a living archive of how people have
-            experienced COVID-19. We want to explore the by finding new meanings
-            emerged from in the spaces they inhabit or the objects that surround
-            them.
+            experienced COVID-19. It captures the meanings that emerged from the
+            spaces we inhabited and objects that surrounded us.
           </p>
         </div>
         <div className="body-container">
           <div className="body-header">
-            <h1 className="title-L">Our Story</h1>
+            <h1 className="subheader">Our Story</h1>
           </div>
          
           <div className="body-text-top">
