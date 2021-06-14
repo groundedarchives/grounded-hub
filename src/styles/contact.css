@@ -35,3 +35,10 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (min-width: 768px) {
+  .topInputs .input-wrapper {
+    width: 100%;
+    max-width: 260px;
+  }
+}
