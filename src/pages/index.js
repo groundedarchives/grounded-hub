@@ -10,6 +10,7 @@ import "../styles/global.css"
 import "../styles/index.css"
 import introVideo from "../../static/Video/Grounded.mp4"
 import introThumb from "../../static/Video/Grounded_thumb.png"
+import { isSafari, isMobileSafari } from "react-device-detect"
 
 export default function Home() {
   return (
@@ -93,12 +94,16 @@ export default function Home() {
           </p>
           <div className="image-names">
             <p>Home office</p>
-            <p>Scrabble Set</p>
+            {isSafari || isMobileSafari ? null : (
+              <>
+                <p>Scrabble Set</p>
+                <p>Punching Bag</p>
+              </>
+            )}
             <p>Potted Plant</p>
             <p>Harry Potter 7</p>
             <p>Candle Set</p>
             <p>River Pebble</p>
-            <p>Punching Bag</p>
             <p>Metro Pass</p>
             <p>Journal Collage</p>
           </div>
@@ -111,22 +116,41 @@ export default function Home() {
                   formats={["auto", "png", "webp"]}
                 />
               }
-              audio="Audio/office_home.mp3"
+              audio="Audio/office.mp3"
               duration={"11:24"}
               transcription="You know before saying anything, I think it's important to note that, at a time when hundreds of thousands of Americans have died and millions have lost their jobs, I'm extraordinarily lucky to be healthy and employed and you know, folks like me who have been lucky enough to not be personally affected by the Coronavirus, and have jobs and can work from home. One of the biggest difficulties has been the blurring of the line between personal and professional life. Right, um, gone is the daily commute to collect your thoughts on your way to work and personal interactions with your coworkers, the physical distinction of leaving work for the day and being done. And so, with these distinctions gone, everything just sort of bleeds together. You know, work and personal become one and days blend together and slowly blend into weeks. But, you know, as stressful and disorienting as this often is, it's still so removed from the pain and suffering that this pandemic has caused. And, this really hit home last week when on a call from work, we had heard from a local doctor and he was talking about the lived reality of the reason that we are all at home. You know, all this stress about these blurred days just kind of came crashing in as– or crashing away as he described seeing the most death he's seen in his time as a doctor. And it really makes the problem of working at home seem so small and insignificant when you know that that's really what's happening out there and, I don't know, this whole thing's very strange but for as long as this stays our reality people are gonna... You know I’ll keep working at this plastic desk next to my bed and doing what I can to protect those more vulnerable than myself."
             ></GalleryItem>
-            <GalleryItem
-              title={"Scrabble Set"}
-              image={
-                <StaticImage
-                  src={"../../static/Illustrations/scrabble illustration.png"}
-                  formats={["auto", "png", "webp"]}
-                />
-              }
-              audio="Audio/scrabble.mp3"
-              duration={"04:06"}
-              transcription="The picture is of our Scrabble set. And, you know, I could only open up the little books that we've been using to certain pages. And it's funny because they happen to show me winning two out of the three games pictured. But the fact is my son who had to come home from college, during the lockdown, you know, came home early came home in March, he's 19. He and I have played probably 100 games of Scrabble. Since mid March, maybe more, probably 85% of the time he wins. That picture shows me winning a few times there. But it's just been this wonderful bonding experience. You know, we always love to play Scrabble, but the amount of games we've played, and how it's become a routine, and you know, a time to really just forget, for a few minutes about everything that's going on and just focus completely on the moment and the game. We put our phones aside, we just really enjoy the game and I seem to have reached more of a plateau with my ability to score, he keeps getting better and better. And he plays online. And, you know, he's talking about when he does go back to college, even though he's deferring his sophomore year for now, because of Coronavirus concerns and restrictions at the school, not wanting to take classes online etc. But you know, he is talking about starting a Scrabble club back at school because it has been, it's just, we both feel it is a perfect game. But it is a symbol of the amount of family time and time at home and time to have basic simple pleasures mean more in life for a lot of people, certainly for us. You know he's been, you know, just taking the time to explore some things that he loves that, you know, when he's socializing, or at school taking classes or you know, just when everything is open and normal - he doesn't have as much time to do, and I have found the same for myself, you know, I've gotten back to reading again, which for some reason I had not doing enough of you know. And just appreciating simple conversation again, and just lovely aspects of, of being, you know, tied to other human beings that are right there in our lives instead of the humans that are out there on the internet or, you know, people we don't know, but for some reason we listen to and get, you know, worked up about. And it's really, it's really, this time is really about family, and about the people you love and the people who support you in tough times and the people who turn to you in tough times. And for some reason, this picture of the Scrabble set captures that for me. And I don't know what I would do what I would have done during this time, if not for my two sons, who, again, we have leaned on each other. We support each other through what's you know, unprecedented time in history. And I just, you know, reminded again and again, how much I love them and I'm so grateful for them."
-            ></GalleryItem>
+            {isSafari || isMobileSafari ? null : (
+              <>
+                <GalleryItem
+                  title={"Scrabble Set"}
+                  image={
+                    <StaticImage
+                      src={
+                        "../../static/Illustrations/scrabble illustration.png"
+                      }
+                      formats={["auto", "png", "webp"]}
+                    />
+                  }
+                  audio="Audio/scrabble.mp3"
+                  duration={"04:06"}
+                  transcription="The picture is of our Scrabble set. And, you know, I could only open up the little books that we've been using to certain pages. And it's funny because they happen to show me winning two out of the three games pictured. But the fact is my son who had to come home from college, during the lockdown, you know, came home early came home in March, he's 19. He and I have played probably 100 games of Scrabble. Since mid March, maybe more, probably 85% of the time he wins. That picture shows me winning a few times there. But it's just been this wonderful bonding experience. You know, we always love to play Scrabble, but the amount of games we've played, and how it's become a routine, and you know, a time to really just forget, for a few minutes about everything that's going on and just focus completely on the moment and the game. We put our phones aside, we just really enjoy the game and I seem to have reached more of a plateau with my ability to score, he keeps getting better and better. And he plays online. And, you know, he's talking about when he does go back to college, even though he's deferring his sophomore year for now, because of Coronavirus concerns and restrictions at the school, not wanting to take classes online etc. But you know, he is talking about starting a Scrabble club back at school because it has been, it's just, we both feel it is a perfect game. But it is a symbol of the amount of family time and time at home and time to have basic simple pleasures mean more in life for a lot of people, certainly for us. You know he's been, you know, just taking the time to explore some things that he loves that, you know, when he's socializing, or at school taking classes or you know, just when everything is open and normal - he doesn't have as much time to do, and I have found the same for myself, you know, I've gotten back to reading again, which for some reason I had not doing enough of you know. And just appreciating simple conversation again, and just lovely aspects of, of being, you know, tied to other human beings that are right there in our lives instead of the humans that are out there on the internet or, you know, people we don't know, but for some reason we listen to and get, you know, worked up about. And it's really, it's really, this time is really about family, and about the people you love and the people who support you in tough times and the people who turn to you in tough times. And for some reason, this picture of the Scrabble set captures that for me. And I don't know what I would do what I would have done during this time, if not for my two sons, who, again, we have leaned on each other. We support each other through what's you know, unprecedented time in history. And I just, you know, reminded again and again, how much I love them and I'm so grateful for them."
+                ></GalleryItem>
+                <GalleryItem
+                  title={"Punching Bag"}
+                  image={
+                    <StaticImage
+                      src={
+                        "../../static/Illustrations/punching bag illustration.png"
+                      }
+                    />
+                  }
+                  audio="Audio/punching_bag.mp3"
+                  duration={"01:27"}
+                  transcription="So the object that I chose to talk about is the punching bag that hangs in my basement in my childhood home. And, I never really paid attention to it until I found myself quarantined in the basement and dealing with a lot of negative emotions after coming back from being abroad and feeling frustrated, uncertain, lonely, and wondering why all this was happening. So, one day, on a whim, I decided to try hitting the punching bag. I was really bad at it at first, but eventually, as I kept going, I was able to put more and more power into my punches and channel all of my negative sentiments into this physical outlet. Hitting the punching bag became a part of my weekly routine and it became a cathartic way for me to kind of reset for my week and remind myself that there are things that I can control— little things I can do, including, staying in touch and controlling my attitude and my emotions."
+                ></GalleryItem>
+              </>
+            )}
             <GalleryItem
               title={"Potted Plant"}
               image={
@@ -174,19 +198,7 @@ export default function Home() {
               duration={"02:46"}
               transcription="Alright, well, there's a lot that's happened over the past few months. There's always a lot going on, and it always seems like there's fifty awful things that are happening outside my home, and it's hard not to feel like I need to engage with them in some way. Yet, whenever I do or whenever many of the people around me do, it's overwhelming, and it can feel like there's nothing really good going on, anything really anchoring us. So, there's this rock that I have. It's smooth. It's about the size of a few quarters. It's a river pebble. It's grey. It's kind of marbled. You look at it and you sort of see another layer to it, like there's the surface and then the longer you look at it, the more you see– the more cracks and ridges you see kind of going away into the depths. And, it's really calming to hold. It feels like something hard and certain is there. And, it's just the right size for you to hold in your hand and fidget with. Whether I am sitting somewhere, like in a meeting, or just anything really. When anything stressful is going on it's become a habit to take this rock and just to hold it and it's relaxing. It really does wonders, I think. And, I'm glad that there's something, just one thing, right now that's certain like just this tiny rock that somehow makes all the difference for me to focus on and and, for a moment, stop thinking about the virus, stop thinking about all the violence that's occurring right now about all of these larger things that I feel like I have no control over, and just center myself on just a rock that I just picked up somewhere. I don't even remember where I have it from. And yet, it does it's job, really. I hope that others have also been able to find something like this for themselves and be able to take on a new meaning in a time when really all of us need something to help ground ourselves."
             ></GalleryItem>
-            <GalleryItem
-              title={"Punching Bag"}
-              image={
-                <StaticImage
-                  src={
-                    "../../static/Illustrations/punching bag illustration.png"
-                  }
-                />
-              }
-              audio="Audio/punching_bag.mp3"
-              duration={"01:27"}
-              transcription="So the object that I chose to talk about is the punching bag that hangs in my basement in my childhood home. And, I never really paid attention to it until I found myself quarantined in the basement and dealing with a lot of negative emotions after coming back from being abroad and feeling frustrated, uncertain, lonely, and wondering why all this was happening. So, one day, on a whim, I decided to try hitting the punching bag. I was really bad at it at first, but eventually, as I kept going, I was able to put more and more power into my punches and channel all of my negative sentiments into this physical outlet. Hitting the punching bag became a part of my weekly routine and it became a cathartic way for me to kind of reset for my week and remind myself that there are things that I can control— little things I can do, including, staying in touch and controlling my attitude and my emotions."
-            ></GalleryItem>
+
             <GalleryItem
               title={"Metro Pass"}
               image={

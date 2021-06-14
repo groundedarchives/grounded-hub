@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { isSafari, isMobileSafari } from "react-device-detect"
 
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
@@ -84,6 +85,20 @@ export default function Gallery({ data }) {
       if (aValue < bValue) return -1
       else return 1
     })
+
+    if (isSafari || isMobileSafari) {
+      const safeImageData = imageData.filter((item, idx) => {
+        console.log(item.name)
+        if (
+          item.name !== "scrabble" &&
+          item.name !== "punching_bag" &&
+          item.name !== "stationary_bike"
+        )
+          return true
+      })
+
+      return safeImageData
+    }
 
     return imageData
   }
