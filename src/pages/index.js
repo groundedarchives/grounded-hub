@@ -75,7 +75,7 @@ export default function Home() {
       <section className="explore">
         <div className="explore-header">
           <div>
-            <h2 className="title-L">Gallery</h2>
+            <h2 className="title-L--landing">Gallery</h2>
             <p className="gallery-text">
               The Gallery offers an artistic representation of several
               submissions to explore the possibilities of a digital exhibit. See

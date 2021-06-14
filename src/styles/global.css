@@ -24,8 +24,15 @@ MARK - utility styles
   font-size: 1.5rem;
 }
 
-.title-M,
+.title-M {
+  font-size: 24px;
+}
+
 .title-L {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+.title-L--landing {
   font-size: 24px;
 }
 
@@ -34,7 +41,8 @@ MARK - utility styles
     font-size: 48px;
   }
 
-  .title-L {
+  .title-L,
+  .title-L--landing {
     font-size: 96px;
   }
 }
