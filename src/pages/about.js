@@ -26,7 +26,7 @@ export default function About() {
           <div className="body-header">
             <h1 className="subheader">Our Story</h1>
           </div>
-         
+
           <div className="body-text-top">
             At the end of 2020, we received a grant from the Mellon Foundation
             to build this project out from 2021 through 2024. We are working to
@@ -60,6 +60,11 @@ export default function About() {
               to remedy the structural inequalities underscored by COVID-19. If
               you are interested in participating or getting involved, please
               contact us.
+              <br />
+              <br />
+              Thank you to Rachael Silberstein and Graham Taylor for helping
+              create the illustrations and film, respectively, for our project.
+              We are very grateful for your talents and contributions!
             </p>
           </div>
         </div>

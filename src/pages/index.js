@@ -93,35 +93,35 @@ export default function Home() {
             to view all stories in their original form.
           </p>
           <div className="image-names">
-            <p>Home office</p>
             {isSafari || isMobileSafari ? null : (
               <>
+                <p>Home office</p>
                 <p>Scrabble Set</p>
                 <p>Punching Bag</p>
+                <p>Candle Set</p>
               </>
             )}
             <p>Potted Plant</p>
             <p>Harry Potter 7</p>
-            <p>Candle Set</p>
             <p>River Pebble</p>
             <p>Metro Pass</p>
             <p>Journal Collage</p>
           </div>
           <div className="scroll-container">
-            <GalleryItem
-              title={"Home Office"}
-              image={
-                <StaticImage
-                  src={"../../static/Illustrations/Home office.png"}
-                  formats={["auto", "png", "webp"]}
-                />
-              }
-              audio="Audio/office.mp3"
-              duration={"11:24"}
-              transcription="You know before saying anything, I think it's important to note that, at a time when hundreds of thousands of Americans have died and millions have lost their jobs, I'm extraordinarily lucky to be healthy and employed and you know, folks like me who have been lucky enough to not be personally affected by the Coronavirus, and have jobs and can work from home. One of the biggest difficulties has been the blurring of the line between personal and professional life. Right, um, gone is the daily commute to collect your thoughts on your way to work and personal interactions with your coworkers, the physical distinction of leaving work for the day and being done. And so, with these distinctions gone, everything just sort of bleeds together. You know, work and personal become one and days blend together and slowly blend into weeks. But, you know, as stressful and disorienting as this often is, it's still so removed from the pain and suffering that this pandemic has caused. And, this really hit home last week when on a call from work, we had heard from a local doctor and he was talking about the lived reality of the reason that we are all at home. You know, all this stress about these blurred days just kind of came crashing in as– or crashing away as he described seeing the most death he's seen in his time as a doctor. And it really makes the problem of working at home seem so small and insignificant when you know that that's really what's happening out there and, I don't know, this whole thing's very strange but for as long as this stays our reality people are gonna... You know I’ll keep working at this plastic desk next to my bed and doing what I can to protect those more vulnerable than myself."
-            ></GalleryItem>
             {isSafari || isMobileSafari ? null : (
               <>
+                <GalleryItem
+                  title={"Home Office"}
+                  image={
+                    <StaticImage
+                      src={"../../static/Illustrations/Home office.png"}
+                      formats={["auto", "png", "webp"]}
+                    />
+                  }
+                  audio="Audio/office_home.mp3"
+                  duration={"01:48"}
+                  transcription="You know before saying anything, I think it's important to note that, at a time when hundreds of thousands of Americans have died and millions have lost their jobs, I'm extraordinarily lucky to be healthy and employed and you know, folks like me who have been lucky enough to not be personally affected by the Coronavirus, and have jobs and can work from home. One of the biggest difficulties has been the blurring of the line between personal and professional life. Right, um, gone is the daily commute to collect your thoughts on your way to work and personal interactions with your coworkers, the physical distinction of leaving work for the day and being done. And so, with these distinctions gone, everything just sort of bleeds together. You know, work and personal become one and days blend together and slowly blend into weeks. But, you know, as stressful and disorienting as this often is, it's still so removed from the pain and suffering that this pandemic has caused. And, this really hit home last week when on a call from work, we had heard from a local doctor and he was talking about the lived reality of the reason that we are all at home. You know, all this stress about these blurred days just kind of came crashing in as– or crashing away as he described seeing the most death he's seen in his time as a doctor. And it really makes the problem of working at home seem so small and insignificant when you know that that's really what's happening out there and, I don't know, this whole thing's very strange but for as long as this stays our reality people are gonna... You know I’ll keep working at this plastic desk next to my bed and doing what I can to protect those more vulnerable than myself."
+                ></GalleryItem>
                 <GalleryItem
                   title={"Scrabble Set"}
                   image={
@@ -148,6 +148,19 @@ export default function Home() {
                   audio="Audio/punching_bag.mp3"
                   duration={"01:27"}
                   transcription="So the object that I chose to talk about is the punching bag that hangs in my basement in my childhood home. And, I never really paid attention to it until I found myself quarantined in the basement and dealing with a lot of negative emotions after coming back from being abroad and feeling frustrated, uncertain, lonely, and wondering why all this was happening. So, one day, on a whim, I decided to try hitting the punching bag. I was really bad at it at first, but eventually, as I kept going, I was able to put more and more power into my punches and channel all of my negative sentiments into this physical outlet. Hitting the punching bag became a part of my weekly routine and it became a cathartic way for me to kind of reset for my week and remind myself that there are things that I can control— little things I can do, including, staying in touch and controlling my attitude and my emotions."
+                ></GalleryItem>
+                <GalleryItem
+                  title={"Candle Set"}
+                  image={
+                    <StaticImage
+                      src={
+                        "../../static/Illustrations/candles illustration.png"
+                      }
+                    />
+                  }
+                  audio="Audio/candles.mp3"
+                  duration={"02:18"}
+                  transcription="Since quarantine started, I started to spend a lot more time in my room and in like my personal spaces, and a lot of that  was creating a space. I was then encouraged to create a space that felt really personal to me and like welcoming and homey because if I was going to be spending that much time at like my desk for instance, I wanted to make sure that I was comfortable there. And, I've always really liked candles. I find them to be extremely calming, and I think that the light they emit is really beautiful. Very different than a lot of the harsh lights that I'm looking at on my computer all day and those sort of things. And the kind of warmth they give off also brings me a lot of joy and happiness. So, once I was getting settled in my St. Louis apartment, I spent a couple trips going to Target with my roommates to pick out various items, and I never went in with the intention of buying a candle but somehow always walked out with one and started building up a small collection in my apartment. I think in terms of the word 'Grounded' these things really do provide me with a sense of groundedness, and when I feel like when I light them, I have no choice but to be calm because the candle itself represents this calmness and especially with all these crazy things going on in the world - their nature of being illuminating and providing light in the darkness and calm in the eye of the storm and that sort of thing. I just started to build a deeper and deeper connection. And now every time I walk in my room, every time I sit down to do work, I reach for my lighter and I light a candle and leave it burning for probably a little too long. And it's brought me a lot of joy in these very confusing times and has allowed me to create spaces I feel comfortable in, especially because I spend so much time in them."
                 ></GalleryItem>
               </>
             )}

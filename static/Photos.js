@@ -66,7 +66,7 @@ export const photos = [
     audioSource: "Audio/candles.mp3",
     themes: { FeelingGrounded, HouseholdItems },
     textSubmission: false,
-    duration: "07:30",
+    duration: "02:18",
   },
   {
     title: "Harry Potter book",
@@ -163,7 +163,7 @@ export const photos = [
     transcript:
       "You know before saying anything, I think it's important to note that, at a time when hundreds of thousands of Americans have died and millions have lost their jobs, I'm extraordinarily lucky to be healthy and employed and you know, folks like me who have been lucky enough to not be personally affected by the Coronavirus, and have jobs and can work from home. One of the biggest difficulties has been the blurring of the line between personal and professional life. Right, um, gone is the daily commute to collect your thoughts on your way to work and personal interactions with your coworkers, the physical distinction of leaving work for the day and being done. And so, with these distinctions gone, everything just sort of bleeds together. You know, work and personal become one and days blend together and slowly blend into weeks. But, you know, as stressful and disorienting as this often is, it's still so removed from the pain and suffering that this pandemic has caused. And, this really hit home last week when on a call from work, we had heard from a local doctor and he was talking about the lived reality of the reason that we are all at home. You know, all this stress about these blurred days just kind of came crashing in as– or crashing away as he described seeing the most death he's seen in his time as a doctor. And it really makes the problem of working at home seem so small and insignificant when you know that that's really what's happening out there and, I don't know, this whole thing's very strange but for as long as this stays our reality people are gonna... You know I’ll keep working at this plastic desk next to my bed and doing what I can to protect those more vulnerable than myself.",
     textSubmission: false,
-    duration: "11:24",
+    duration: "1:46",
   },
   {
     title: "River Pebble",
