@@ -9,6 +9,7 @@ export function TextInput({ isPhone, title, name }) {
       </label>
       {isPhone ? (
         <input
+          title="format: xxx-xxx-xxxx"
           type="tel"
           id={name}
           name={name}

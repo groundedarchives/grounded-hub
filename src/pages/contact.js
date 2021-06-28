@@ -14,7 +14,12 @@ export default function Contact() {
           <h1 className="title-L">Contact</h1>
           <h2>Connect with Grounded</h2>
           <p>Email us at groundedarchives@gmail.com</p>
-          <form className="formWrapper" netlify name="contact">
+          <form
+            className="formWrapper"
+            method="POST"
+            data-netlify="true"
+            name="contact"
+          >
             <div className="firstSection">
               <div className="topInputs">
                 <TextInput title="Full Name" name="name" />
