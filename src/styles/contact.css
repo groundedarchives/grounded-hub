@@ -2,11 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: calc(100vh - 100px);
 }
 
 .contactPage .body {
-  width: 100%;
   max-width: 550px;
 }
 @media (min-width: 768px) {
@@ -34,6 +32,15 @@
 .topInputs {
   display: flex;
   justify-content: space-between;
+}
+
+.topInputs > div:first-child {
+  margin-right: 0.5rem;
+}
+
+.submitButton {
+  margin: 2rem 8rem;
+  height: 3rem;
 }
 
 @media (min-width: 768px) {

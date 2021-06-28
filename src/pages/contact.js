@@ -10,8 +10,8 @@ export default function Contact() {
     <>
       <Nav />
       <section className="contactPage">
-        <h1 className="title-L">Contact</h1>
         <div className="body">
+          <h1 className="title-L">Contact</h1>
           <h2>Connect with Grounded</h2>
           <p>Email us at groundedarchives@gmail.com</p>
           <form className="formWrapper" action="">
@@ -34,6 +34,9 @@ export default function Contact() {
               ]}
             />
             <TextArea name="Message" />
+            <button className="submitButton pageButton" type="submit">
+              Submit
+            </button>
           </form>
         </div>
       </section>

@@ -4,7 +4,9 @@ import "../styles/ContactInput.css"
 export function TextInput({ isPhone, name }) {
   return (
     <div className="input-wrapper">
-      <label htmlFor="">{name}</label>
+      <label className="input-label" htmlFor="">
+        {name}
+      </label>
       {isPhone ? (
         <input
           type="tel"
@@ -23,8 +25,10 @@ export function TextInput({ isPhone, name }) {
 export function TextArea({ name }) {
   return (
     <div className="input-wrapper">
-      <label htmlFor={name}>{name}</label>
-      <textarea name={name} id={name} cols="30" rows="10"></textarea>
+      <label className="input-label" htmlFor={name}>
+        {name}
+      </label>
+      <textarea name={name} id={name} cols="30" rows="15"></textarea>
     </div>
   )
 }
@@ -32,7 +36,7 @@ export function TextArea({ name }) {
 export function CheckboxInputs({ question, inputNames }) {
   return (
     <div className="input-wrapper">
-      <h3>{question}</h3>
+      <h3 className="input-label">{question}</h3>
       {inputNames.map(name => {
         return (
           <div>
