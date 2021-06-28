@@ -15,11 +15,15 @@ export default function Contact() {
           <h2>Connect with Grounded</h2>
           <p>Email us at groundedarchives@gmail.com</p>
           <form
+            action="/thank"
             className="formWrapper"
             method="POST"
             data-netlify="true"
             name="contact"
+            netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
             <div className="firstSection">
               <div className="topInputs">
                 <TextInput title="Full Name" name="name" />
@@ -48,7 +52,7 @@ export default function Contact() {
             />
             <TextArea title="Message" name="message" />
             <button className="submitButton pageButton" type="submit">
-              Submit
+              Submit Message
             </button>
           </form>
         </div>
