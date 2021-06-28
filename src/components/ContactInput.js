@@ -1,50 +1,49 @@
 import React from "react"
 import "../styles/ContactInput.css"
 
-export function TextInput({ isPhone, name }) {
+export function TextInput({ isPhone, title, name }) {
   return (
     <div className="input-wrapper">
-      <label className="input-label" htmlFor="">
-        {name}
+      <label className="input-label" htmlFor={name}>
+        {title}
       </label>
       {isPhone ? (
         <input
           type="tel"
-          id="phone"
-          name="phone"
+          id={name}
+          name={name}
           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
           required
         />
       ) : (
-        <input type="text" name="" id="" />
+        <input type="text" name={name} id={name} />
       )}
     </div>
   )
 }
 
-export function TextArea({ name }) {
+export function TextArea({ title, name }) {
   return (
     <div className="input-wrapper">
       <label className="input-label" htmlFor={name}>
-        {name}
+        {title}
       </label>
       <textarea name={name} id={name} cols="30" rows="15"></textarea>
     </div>
   )
 }
 
-export function CheckboxInputs({ question, inputNames }) {
+export function CheckboxInputs({ title, name, inputNames }) {
   return (
-    <div className="input-wrapper">
-      <h3 className="input-label">{question}</h3>
-      {inputNames.map(name => {
+    <fieldset className="input-wrapper">
+      <h3 className="input-label">{title}</h3>
+      {inputNames.map(text => {
         return (
-          <div>
-            <input type="checkbox" id={name} name={name} />
-            <label for={name}>{name}</label>
-          </div>
+          <label className="checkbox-label">
+            <input type="checkbox" name={name} id={text} value={text} /> {text}
+          </label>
         )
       })}
-    </div>
+    </fieldset>
   )
 }

@@ -10,6 +10,15 @@
   margin-bottom: 0.25rem;
 }
 
+.input-wrapper .checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input[type="checkbox"] {
+  margin-right: 5px;
+}
+
 .input-wrapper input[type="text"],
 .input-wrapper input[type="tel"],
 .input-wrapper textarea {

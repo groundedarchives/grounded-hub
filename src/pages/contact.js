@@ -14,17 +14,25 @@ export default function Contact() {
           <h1 className="title-L">Contact</h1>
           <h2>Connect with Grounded</h2>
           <p>Email us at groundedarchives@gmail.com</p>
-          <form className="formWrapper" action="">
+          <form className="formWrapper" netlify name="contact">
             <div className="firstSection">
               <div className="topInputs">
-                <TextInput name="Full Name" />
-                <TextInput isPhone={true} name="Phone Number" />
+                <TextInput title="Full Name" name="name" />
+                <TextInput
+                  isPhone={true}
+                  title="Phone Number"
+                  name="phone-number"
+                />
               </div>
-              <TextInput name="Email" />
-              <TextInput name="Organization (if applicable)" />
+              <TextInput title="Email" name="email" />
+              <TextInput
+                title="Organization (if applicable)"
+                name="organization"
+              />
             </div>
             <CheckboxInputs
-              question="How can we help you?"
+              title="How can we help you?"
+              name="question-category"
               inputNames={[
                 "General Inquiry",
                 "Collaboration Interest",
@@ -33,7 +41,7 @@ export default function Contact() {
                 "Museum or Exhibit Interest",
               ]}
             />
-            <TextArea name="Message" />
+            <TextArea title="Message" name="message" />
             <button className="submitButton pageButton" type="submit">
               Submit
             </button>

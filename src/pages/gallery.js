@@ -151,43 +151,6 @@ export default function Gallery({ data }) {
     setDisplayedPhotos(newDisplayedPhotos)
   }
 
-  // const handleChange = event => {
-  //   // updating an object instead of a Map
-  //   setchosenFilters({
-  //     ...chosenFilters,
-  //     [event.target.name]: event.target.checked,
-  //   })
-  //   // update the state by creating a new Map
-  // }
-
-  // const resetArchive = event => {
-  //   event.preventDefault()
-  //   setdisplayedPhotos(photos)
-  // }
-
-  // const handleSubmit = event => {
-  //   event.preventDefault()
-  //   let filteredPhotos = []
-  //   let filterItem = ""
-  //   let filterTrue = false
-  //   let keys = Object.keys(chosenFilters)
-  //   let values = Object.values(chosenFilters)
-  //   for (let i = 0; i < keys.length; ++i) {
-  //     filterItem = keys[i]
-  //     filterTrue = values[i]
-  //     for (let j = 0; j < photos.length; ++j) {
-  //       let themes = photos[j].themes
-  //       if (themes.includes(filterItem) && filterTrue) {
-  //         let newItem = photos[j]
-  //         filteredPhotos = filteredPhotos.concat(newItem)
-  //       }
-  //     }
-  //   }
-
-  //   // console.log(filteredPhotos)
-  //   setdisplayedPhotos(filteredPhotos)
-  // }
-
   return (
     <>
       <Nav />
@@ -226,6 +189,7 @@ export default function Gallery({ data }) {
                   key={i}
                   image={
                     <GatsbyImage
+                      width={100}
                       alt={image.title}
                       image={imageSrc}
                       imgStyle={{ mixBlendMode: "multiply" }}
