@@ -1,11 +1,9 @@
 footer {
   background-color: #c2d8d8;
 
-  height: 200px;
+  height: 320px;
 
   margin-top: 3rem;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
 
   display: flex;
   flex-direction: column;
@@ -13,11 +11,32 @@ footer {
   align-items: center;
 }
 
-.insta-link {
+.title-footer {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+footer .body-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer .site-navigation {
   display: flex;
   flex-direction: column;
+}
+
+.site-navigation a {
+  font-size: 16px;
+}
+
+.insta-link {
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 1.5rem;
 }
 
 .insta-link svg {
