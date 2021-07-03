@@ -46,7 +46,7 @@ export default function Contact() {
                 "General Inquiry",
                 "Collaboration Interest",
                 "Media Request",
-                "Story submission Interest",
+                "Story Submission Interest",
                 "Museum or Exhibit Interest",
               ]}
             />

@@ -32,7 +32,7 @@ export default function DetailedArchiveInfo({ image, imageData, toggleInfo }) {
       return (
         <>
           <h2 className="transcriptSubtitle">
-            Audio or text were not submitted
+            No audio or text available for this piece
           </h2>
         </>
       )
