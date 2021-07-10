@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react"
+import React, { memo } from "react"
 
 import "../styles/global.css"
 import "../styles/index.css"
@@ -11,17 +11,6 @@ const areEqual = (prevProps, nextProps) => {
 // https://engineering.belchior.me/creating-a-custom-photo-gallery-using-gatsbyjs-and-css-grid-ck8ghm0vn01vkz3s1ulux9v17
 
 const ArchiveImage = memo(({ image }) => {
-  const makeBig = {
-    Ballgame: 2,
-    "Office Home": 2,
-    Tractor: 3,
-    "Pet rat": 3,
-    Scrabble: 1,
-    Screen: 3,
-  }
-
-  const colToStartAt = makeBig[image.props.alt]
-
   return <div>{image}</div>
 }, areEqual)
 

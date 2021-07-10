@@ -87,14 +87,14 @@ export default function Gallery({ data }) {
     })
 
     if (isSafari || isMobileSafari) {
-      const safeImageData = imageData.filter((item, idx) => {
-        console.log(item.name)
+      const safeImageData = imageData.filter((item) => {
         if (
           item.name !== "scrabble" &&
           item.name !== "punching_bag" &&
           item.name !== "stationary_bike"
         )
           return true
+        else return false
       })
 
       return safeImageData
@@ -106,7 +106,7 @@ export default function Gallery({ data }) {
   const [selectedSubmission, setSelectedSubmission] = useState(null)
   const [filters, setFilters] = useState({})
   const [displayedPhotos, setDisplayedPhotos] = useState(gatherImages())
-  const [allPhotos, setAllPhotos] = useState(gatherImages())
+  const [allPhotos] = useState(gatherImages())
 
   const toggleImageDetails = arrayIndex => {
     if (arrayIndex === selectedSubmission) {

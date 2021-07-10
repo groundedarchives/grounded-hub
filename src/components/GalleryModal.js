@@ -33,7 +33,6 @@ class Collapsible extends React.Component {
 
   getAudioPlayerShow() {
     if (this.props.audioSource=="") {
-      console.log("do not show audio player")
       this.setState({
         showAudioPlayer:false
       })
