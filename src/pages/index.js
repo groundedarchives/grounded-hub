@@ -39,8 +39,12 @@ export default function Home() {
               </p>
             </div>
             <div className="landing-buttons">
-              <button className="pageButton">See gallery</button>
-              <button className="pageButton">Learn More</button>
+              <Link className="pageButton" to="/gallery">
+                See gallery
+              </Link>
+              <Link className="pageButton" to="/about">
+                Learn More
+              </Link>
             </div>
           </div>
         </section>
