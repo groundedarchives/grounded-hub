@@ -92,6 +92,13 @@ a {
   margin: 1rem;
 
   text-align: center;
+
+  transition: all 300ms;
+}
+
+.pageButton:hover {
+  background-color: #064457;
+  color: white;
 }
 
 figure {

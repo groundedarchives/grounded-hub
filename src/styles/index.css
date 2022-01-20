@@ -64,6 +64,7 @@ home.css -- styles to be applied on the home page
   justify-content: center;
 }
 
+
 @media (min-width: 768px) {
   .landing-text {
     font-size: 18px;
