@@ -16,7 +16,7 @@ import { isSafari, isMobileSafari } from "react-device-detect"
 export default function Home() {
   return (
     <>
-      <Helmet>
+      <Helmet title="Grounded: The Pandemic Archive">
         <meta charSet="utf-8" />
         <title>Grounded: The Pandemic Archive</title>
       </Helmet>
