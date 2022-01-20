@@ -6,6 +6,10 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Grounded: The Pandemic Archive",
+    description: "Grounded: The Pandemic Archive",
+  },
   plugins: [
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-image`,
