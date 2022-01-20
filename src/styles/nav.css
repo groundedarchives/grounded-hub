@@ -30,6 +30,10 @@ nav .navItem.logo {
   margin-left: 2rem;
 }
 
+.subpages .navItem:hover {
+  font-weight: 700;
+}
+
 .closeIcon {
   position: absolute;
   right: 2rem;
