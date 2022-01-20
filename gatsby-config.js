@@ -11,6 +11,7 @@ module.exports = {
     description: "Grounded: The Pandemic Archive",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

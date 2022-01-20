@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { Helmet } from "react-helmet"
 
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
@@ -15,6 +16,10 @@ import { isSafari, isMobileSafari } from "react-device-detect"
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Grounded: The Pandemic Archive</title>
+      </Helmet>
       <div className="background-container">
         <Nav />
         <StaticImage
