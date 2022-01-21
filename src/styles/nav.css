@@ -27,7 +27,10 @@ nav .navItem.logo {
 }
 
 .subpages .navItem {
-  margin-left: 2rem;
+  display: inline-block;
+  margin-left: 0rem;
+  width: 120px;
+  text-align: center;
 }
 
 .subpages .navItem:hover {
