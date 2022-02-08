@@ -23,7 +23,7 @@ This is the gallery site for Grounded: The Pandemic Archive. Below are the defau
     Clone this repo into a folder, navigate into your new site’s directory, and start it up.
 
     ```shell
-    git clone https://github.com/akshatksharma/grounded-hub.git
+    git clone https://github.com/groundedarchives/grounded-hub.git
     cd grounded-hub/
     gatsby develop
     ```
