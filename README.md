@@ -1,5 +1,5 @@
 <h1 align="center">
-  Grounded
+  This is the gallery site for Grounded: The Pandemic Archive. Below are the default instructions to get the site up and running, and some links to learn more about Gatsby, the web development framework we used. More documentation exists (or will exist) on the Grounded Notion page. If you have any questions, feel free to email akshatksharmaa@gmail.com. Thanks!
 </h1>
 
 
