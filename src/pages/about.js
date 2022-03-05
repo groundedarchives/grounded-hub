@@ -33,7 +33,7 @@ export default function About() {
             this project more community-centered. Our goal is to explore how
             individuals—particularly those hardest hit by the pandemic—are using
             creative outlets to resist injustice, foster healing, challenge
-            systemic discrimination, and cope with COVID-19. We are working tot
+            systemic discrimination, and cope with COVID-19. We are working to
             imagine a more just future through different storytelling tools and
             tactics. COVID-19 has called attention to the vast disparities in
             our society, specifically how minority populations have been
