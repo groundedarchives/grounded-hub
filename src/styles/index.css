@@ -64,7 +64,6 @@ home.css -- styles to be applied on the home page
   justify-content: center;
 }
 
-
 @media (min-width: 768px) {
   .landing-text {
     font-size: 18px;
@@ -75,6 +74,7 @@ home.css -- styles to be applied on the home page
 /* about section */
 
 .about {
+  min-height: 600px;
 }
 
 .about-header {
@@ -136,6 +136,7 @@ home.css -- styles to be applied on the home page
 
 .explore {
   /* padding: 0; */
+  min-height: 920px;
 }
 
 .explore-header {
