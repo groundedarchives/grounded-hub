@@ -44,9 +44,9 @@ export default function Home() {
               </p>
             </div>
             <div className="landing-buttons">
-              <Link className="pageButton" to="/gallery">
+              <a className="pageButton" href="#explore">
                 See gallery
-              </Link>
+              </a>
               <Link className="pageButton" to="/about">
                 Learn More
               </Link>
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="explore">
+      <section className="explore" id="explore">
         <div className="explore-header">
           <div>
             <h2 className="title-L--landing">Gallery</h2>
